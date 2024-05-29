@@ -160,7 +160,7 @@ export default function Home() {
           <img src="./second-back.svg" alt="" width="100%" className="h-full" />
         </div>
         <div className="text-white flex flex-col justify-evenly p-[10%] gap-20">
-          <div className="w-72 flex flex-col gap-3 z-10">
+          <div className="lg:w-72 sm:w-52 flex flex-col gap-3 z-10">
             <hr />
             <h1 className="lg:text-4xl sm:text-2xl">Problem</h1>
             <p>
@@ -169,7 +169,7 @@ export default function Home() {
             </p>
           </div>
           <div className="w-full z-10">
-            <div className="w-72 float-right flex flex-col gap-3">
+            <div className="lg:w-72 sm:w-52 float-right flex flex-col gap-3">
               <hr />
               <h1 className="lg:text-4xl sm:text-2xl">Solution</h1>
               <p>
@@ -225,27 +225,36 @@ export default function Home() {
             height={800}
           />
           <div className="absolute top-[84px] left-[470px]">
-            <ServiceBtnTemplate type="Connection" />
+            <ServiceBtnTemplate type="Connection" direct={0} />
           </div>
           <div className="absolute top-[300px] left-[190px]">
-            <ServiceBtnTemplate type="Repetition" />
+            <ServiceBtnTemplate type="Repetition" direct={0} />
           </div>
           <div className="absolute top-[700px] left-[140px]">
-            <ServiceBtnTemplate type="Legion" />
+            <ServiceBtnTemplate type="Legion" direct={0} />
           </div>
           <div className="absolute top-[880px] left-[460px]">
-            <ServiceBtnTemplate type="Accessibility" />
+            <ServiceBtnTemplate type="Accessibility" direct={0} />
           </div>
           <div className="absolute top-[470px] left-[730px]">
-            <ServiceBtnTemplate type="Origin" />
+            <ServiceBtnTemplate type="Origin" direct={0} />
           </div>
         </div>
       </div>
-      <div className="lg:hidden sm:flex flex-col gap-10 py-16 px-16">
+      <div className="lg:hidden sm:flex flex-col gap-10 py-16 px-16 relative bg-[#E0E9FD]">
+        <div className="w-full h-full absolute top-[300px] z-0 left-0 object-cover">
+          <Image
+            src="/utils/back-form.png"
+            alt="Background"
+            width={500}
+            height={500}
+            className="object-cover"
+          />
+        </div>
         <ServiceBtnTemplate type="Connection" />
-        <ServiceBtnTemplate type="Repetition" />
+        <ServiceBtnTemplate type="Repetition" direct={1} />
         <ServiceBtnTemplate type="Legion" />
-        <ServiceBtnTemplate type="Accessibility" />
+        <ServiceBtnTemplate type="Accessibility" direct={1} />
         <ServiceBtnTemplate type="Origin" />
       </div>
       <div className="w-full relative h-full">
