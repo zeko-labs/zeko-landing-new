@@ -24,14 +24,14 @@ export default function Home() {
   }, [showCard]);
   return (
     <section className="flex flex-col items-center justify-center">
-      <div className="relative w-full h-full bg-gradient-to-t from-slate-300 to-slate-300 pb-32">
-        <div className="w-screen h-screen -z-10 -mt-32">
-          <video autoPlay loop muted className="w-full h-[120%] object-cover">
+      <div className="relative w-full lg:h-screen sm:h-full bg-gradient-to-t from-slate-300 to-slate-300 pb-32">
+        <div className="w-screen -mt-32 h-full lg:relative sm:absolute">
+          <video autoPlay loop muted className="w-full h-[140%] object-cover">
             <source src="/background.webm" />
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="absolute top-0 w-full">
+        <div className="lg:absolute sm:relative top-0 w-full flex flex-col justify-evenly h-full">
           <Image
             src={"./logo.svg"}
             alt=""
@@ -39,7 +39,7 @@ export default function Home() {
             height={40}
             className="pl-[5%]"
           />
-          <div className="pl-[5%] lg:pt-[10%] md:py-5">
+          <div className="pl-[5%] lg:pt-[10%] sm:py-5">
             <div
               className={`inline-block max-w-3xl justify-center ${fontLexendLight.className}`}
             >
@@ -57,7 +57,7 @@ export default function Home() {
               </h2>
             </div>
           </div>
-          <div className="w-full flex lg:flex-row md:flex-col items-center gap-20 justify-between p-[5%] pt-0 mt-[10%]">
+          <div className="w-full flex lg:flex-row sm:flex-col items-center gap-20 justify-between p-[5%] pt-0 mt-[10%]">
             <div className="relative" onMouseEnter={handleMouseOver}>
               <div className="relative">
                 <Image
@@ -151,7 +151,7 @@ export default function Home() {
         <div className="absolute top-0 p-[10%] text-white w-full flex flex-col justify-between h-full">
           <div className="w-72 flex flex-col gap-3">
             <hr />
-            <h1 className="lg:text-4xl md:text-2xl">Problem</h1>
+            <h1 className="lg:text-4xl sm:text-2xl">Problem</h1>
             <p>
               We live in a world of expanding technology and rapidly eroding
               trust.
@@ -159,7 +159,7 @@ export default function Home() {
           </div>
           <div className="w-72 ml-auto flex flex-col gap-3">
             <hr />
-            <h1 className="lg:text-4xl md:text-2xl">Solution</h1>
+            <h1 className="lg:text-4xl sm:text-2xl">Solution</h1>
             <p>
               Zeko&apos;s simple zk rollup architecture seamlessly embeds trust
               into every digital interaction.
@@ -172,8 +172,8 @@ export default function Home() {
           <img src="./third-back.svg" alt="" width="100%" height="auto" />
         </div>
       </div> */}
-      <div className="w-full p-[5%] flex justify-between bg-[#41568B] text-white md:flex-col lg:flex-row md:gap-10">
-        <div className="lg:w-72 md:w-full lg:h-80 gap-5 md:h-auto flex flex-col justify-between imgCont">
+      <div className="w-full p-[5%] flex justify-between bg-[#41568B] text-white sm:flex-col lg:flex-row sm:gap-10">
+        <div className="lg:w-72 sm:w-full lg:h-80 gap-5 sm:h-auto flex flex-col justify-between imgCont">
           <h1 className="text-4xl w-64">Advanced Rollup</h1>
           <p>
             Zeko is a completely different type of rollup protocol. It is
@@ -183,7 +183,7 @@ export default function Home() {
           </p>
           <BtnCircle />
         </div>
-        <div className="lg:w-80 lg:h-80 md:h-auto gap-5 md:w-full flex flex-col justify-between imgCont">
+        <div className="lg:w-80 lg:h-80 sm:h-auto gap-5 sm:w-full flex flex-col justify-between imgCont">
           <h1 className="text-4xl">Cross-Chain Revolution</h1>
           <p>
             Zeko reaches beyond the standard zkRollup or EVM L2 because it’s
@@ -193,7 +193,7 @@ export default function Home() {
           </p>
           <BtnCircle />
         </div>
-        <div className="lg:w-80 lg:h-80 md:h-auto gap-5 md:w-full flex flex-col justify-between imgCont">
+        <div className="lg:w-80 lg:h-80 sm:h-auto gap-5 sm:w-full flex flex-col justify-between imgCont">
           <h1 className="text-4xl">Expanding Blockchain Design</h1>
           <p>
             Placing zero-knowledge proof capabilities into the hands of
@@ -203,7 +203,7 @@ export default function Home() {
           <BtnCircle />
         </div>
       </div>
-      <div className="w-full bg-[#E0E9FD] justify-center lg:flex md:hidden">
+      <div className="w-full bg-[#E0E9FD] justify-center lg:flex sm:hidden">
         <div className="py-28 px-28 relative">
           <Image
             src="/utils/back-form.png"
@@ -228,7 +228,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="lg:hidden md:flex flex-col gap-10 py-16">
+      <div className="lg:hidden sm:flex flex-col gap-10 py-16">
         <ServiceBtnTemplate type="Connection" />
         <ServiceBtnTemplate type="Repetition" />
         <ServiceBtnTemplate type="Legion" />
@@ -237,7 +237,7 @@ export default function Home() {
       </div>
       <div className="w-full relative ">
         <div className="flex flex-col">
-          <div className="flex md:flex-col lg:flex-row justify-between gap-10 w-full absolute top-0 p-24 cardImgBack">
+          <div className="flex sm:flex-col lg:flex-row justify-between gap-10 w-full absolute top-0 p-24 cardImgBack">
             <div
               className={`flex-col gap-5 lg:flex sm:${
                 cardPage === 1 ? "flex" : "hidden"
@@ -259,7 +259,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="w-full lg:hidden md:block mt-5">
+              <div className="w-full lg:hidden sm:block mt-5">
                 <Button
                   radius="full"
                   className="w-20 h-20 float-right"
@@ -294,7 +294,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="w-full flex justify-between lg:hidden md:flex mt-5">
+              <div className="w-full flex justify-between lg:hidden sm:flex mt-5">
                 <Button
                   radius="full"
                   className="w-20 h-20"
@@ -342,7 +342,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="w-full flex justify-between lg:hidden md:flex mt-5">
+              <div className="w-full flex justify-between lg:hidden sm:flex mt-5">
                 <Button
                   radius="full"
                   className="w-20 h-20"
