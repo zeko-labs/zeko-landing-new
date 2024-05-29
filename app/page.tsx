@@ -1,6 +1,6 @@
 "use client";
 
-import { title, subtitle, card, card_2 } from "@/components/primitives";
+import { title, subtitle, card } from "@/components/primitives";
 import { fontLexend, fontLexendBold, fontLexendLight } from "@/config/fonts";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -11,11 +11,16 @@ import { ServiceBtnTemplate } from "@/components/ServiceBtnTemplate";
 
 export default function Home() {
   const [showCard, setShowCard] = useState(0);
-  const handleMouseOver = () => {
-    if (showCard === 0) setShowCard(1);
-  };
 
   const [cardPage, setCardPage] = useState(1);
+
+  useEffect(() => {
+    if (!showCard) {
+      setTimeout(() => {
+        setShowCard(1);
+      }, 3000);
+    }
+  }, []);
 
   useEffect(() => {
     if (showCard && showCard < 4) {
@@ -31,17 +36,17 @@ export default function Home() {
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="w-full flex flex-col justify-between h-full z-10 pb-10">
+        <div className="w-full flex flex-col justify-between h-full z-10 pt-10 pb-10 sm:items-center lg:items-start">
           <Image
             src={"./logo.svg"}
             alt=""
             width={180}
-            height={40}
-            className="pl-[5%] z-10"
+            height={100}
+            className="lg:pl-20 sm:pl-0 z-10 lg:w-48 sm:w-28"
           />
-          <div className="pl-[5%] lg:pt-[10%] sm:py-5 z-10">
+          <div className="lg:pl-20 sm:px-5 lg:pt-20 sm:py-10 z-10">
             <div
-              className={`inline-block max-w-3xl justify-center ${fontLexendLight.className}`}
+              className={`inline-block max-w-3xl justify-center lg:text-left sm:text-center ${fontLexendLight.className}`}
             >
               <h1 className={`${title()} ${fontLexend.className}`}>
                 Decentralized Trust,{" "}
@@ -57,8 +62,8 @@ export default function Home() {
               </h2>
             </div>
           </div>
-          <div className="w-full flex lg:flex-row sm:flex-col items-center gap-20 justify-between p-[5%] pt-0">
-            <div className="relative" onMouseEnter={handleMouseOver}>
+          <div className="w-full flex lg:flex-row sm:flex-col items-center lg:gap-20 sm:gap-10 justify-between p-20 lg:px-20 sm:px-10 pt-0">
+            <div className="relative">
               <div className="relative">
                 <Image
                   className={`anime ${showCard > 0 ? "hide" : "show"}`}
@@ -88,7 +93,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="relative" onMouseEnter={handleMouseOver}>
+            <div className="relative">
               <div
                 className={`absolute w-full card anime hide z-10 ${
                   showCard > 1 ? "card-show show" : ""
@@ -118,7 +123,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="relative" onMouseEnter={handleMouseOver}>
+            <div className="relative">
               <div className="relative">
                 <Image
                   className={`anime ${showCard > 2 ? "hide" : "show"}`}
@@ -186,33 +191,57 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full h-full p-[10%] py-28 flex justify-evenly bg-[#41568B] text-white sm:flex-col lg:flex-row sm:gap-10">
-        <div className="lg:w-72 sm:w-full lg:h-80 gap-5 sm:h-auto flex flex-col justify-between imgCont">
-          <h1 className="text-4xl w-64">Advanced Rollup</h1>
-          <p>
+        <div className="lg:w-72 sm:w-full lg:h-80 gap-5 sm:h-auto flex flex-col justify-between imgCont cursor-pointer">
+          <h1 className="text-4xl w-64">
+            <b>Advanced Rollup</b>
+          </h1>
+          <div>
             Zeko is a completely different type of rollup protocol. It is
             designed for developers to easily access a rich set of
             zero-knowledge features for proof generation, verification,
-            recursion, and more all using typescript &gt;&gt;
-          </p>
+            recursion, and more{" "}
+            <div className="pictureTextCont">
+              <p className="pictureText">all using typescript &gt;&gt;</p>
+              <p className="pictureText-2">
+                all using typescript &nbsp;&nbsp;&gt;&gt;
+              </p>
+            </div>
+          </div>
           <BtnCircle />
         </div>
-        <div className="lg:w-80 lg:h-80 sm:h-auto gap-5 sm:w-full flex flex-col justify-between imgCont">
-          <h1 className="text-4xl">Cross-Chain Revolution</h1>
-          <p>
+        <div className="lg:w-80 lg:h-80 sm:h-auto gap-5 sm:w-full flex flex-col justify-between imgCont cursor-pointer">
+          <h1 className="text-4xl">
+            <b>Cross-Chain Revolution</b>
+          </h1>
+          <div>
             Zeko reaches beyond the standard zkRollup or EVM L2 because it’s
             designed for any developer to recursively prove and bridge unlimited
             off-chain computation across all blockchains whilst also maintaining
-            privacy over user data &gt;&gt;
-          </p>
+            privacy{" "}
+            <div className="pictureTextCont">
+              <p className="pictureText">over user data &gt;&gt;</p>
+              <p className="pictureText-2">
+                over user data &nbsp;&nbsp;&gt;&gt;
+              </p>
+            </div>
+          </div>
           <BtnCircle />
         </div>
-        <div className="lg:w-80 lg:h-80 sm:h-auto gap-5 sm:w-full flex flex-col justify-between imgCont">
-          <h1 className="text-4xl">Expanding Blockchain Design</h1>
-          <p>
+        <div className="lg:w-[330px] lg:h-80 sm:h-auto gap-5 sm:w-full flex flex-col justify-between imgCont cursor-pointer">
+          <h1 className="text-4xl">
+            <b>Expanding Blockchain Design</b>
+          </h1>
+          <div>
             Placing zero-knowledge proof capabilities into the hands of
             developers massively expands the design space for blockchain
-            applications as we know them today &gt;&gt;
-          </p>
+            applications as we{" "}
+            <div className="pictureTextCont">
+              <p className="pictureText">know them today &gt;&gt;</p>
+              <p className="pictureText-2">
+                know them today &nbsp;&nbsp;&gt;&gt;
+              </p>
+            </div>
+          </div>
           <BtnCircle />
         </div>
       </div>
@@ -279,7 +308,7 @@ export default function Home() {
               <div className="relative">
                 <div
                   style={card}
-                  className="flex flex-col gap-5 justify-between"
+                  className="flex flex-col gap-5 justify-between rounded-2xl"
                 >
                   <img src="./cardImg-1.svg" alt="" />
                   <div>
@@ -295,15 +324,17 @@ export default function Home() {
               <div className="w-full lg:hidden sm:block mt-5">
                 <Button
                   radius="full"
-                  className="w-20 h-20 float-right"
+                  className="float-right"
+                  isIconOnly={true}
                   variant="bordered"
+                  size="lg"
                   onClick={() => setCardPage(2)}
                 >
                   <Image
                     src="/utils/next_btn.png"
                     alt="next"
-                    width={80}
-                    height={80}
+                    width={30}
+                    height={30}
                   />
                 </Button>
               </div>
@@ -316,7 +347,7 @@ export default function Home() {
               <div className="relative">
                 <div
                   style={card}
-                  className="flex flex-col gap-5 justify-between"
+                  className="flex flex-col gap-5 justify-between rounded-2xl"
                 >
                   <img src="./cardImg-2.svg" alt="" />
                   <div>
@@ -330,28 +361,32 @@ export default function Home() {
               <div className="w-full flex justify-between lg:hidden sm:flex mt-5">
                 <Button
                   radius="full"
-                  className="w-20 h-20"
+                  className="float-right"
+                  isIconOnly={true}
                   variant="bordered"
+                  size="lg"
                   onClick={() => setCardPage(1)}
                 >
                   <Image
                     src="/utils/back_btn.png"
                     alt="back"
-                    width={80}
-                    height={80}
+                    width={30}
+                    height={30}
                   />
                 </Button>
                 <Button
                   radius="full"
-                  className="w-20 h-20"
+                  className="float-right"
+                  isIconOnly={true}
                   variant="bordered"
+                  size="lg"
                   onClick={() => setCardPage(3)}
                 >
                   <Image
                     src="/utils/next_btn.png"
                     alt="next"
-                    width={80}
-                    height={80}
+                    width={30}
+                    height={30}
                   />
                 </Button>
               </div>
@@ -364,7 +399,7 @@ export default function Home() {
               <div className="relative ">
                 <div
                   style={card}
-                  className="flex flex-col gap-5 justify-between"
+                  className="flex flex-col gap-5 justify-between rounded-2xl"
                 >
                   <img src="./cardImg-3.svg" alt="" />
                   <div>
@@ -378,15 +413,17 @@ export default function Home() {
               <div className="w-full flex justify-between lg:hidden sm:flex mt-5">
                 <Button
                   radius="full"
-                  className="w-20 h-20"
+                  className="float-right"
+                  isIconOnly={true}
                   variant="bordered"
+                  size="lg"
                   onClick={() => setCardPage(2)}
                 >
                   <Image
                     src="/utils/back_btn.png"
                     alt="back"
-                    width={80}
-                    height={80}
+                    width={30}
+                    height={30}
                   />
                 </Button>
               </div>

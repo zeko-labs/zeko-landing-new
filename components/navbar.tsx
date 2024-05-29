@@ -11,6 +11,13 @@ import dynamic from "next/dynamic";
 import { useCallback, useEffect, useState } from "react";
 import clsx from "clsx";
 import Image from "next/image";
+import { Button, ButtonGroup } from "@nextui-org/button";
+import {
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+} from "@nextui-org/dropdown";
 
 const DynamicMuteSwitch = dynamic(() => import("./mute-switch"), {
   ssr: false,
@@ -52,12 +59,29 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <NavbarItem className="hidden sm:flex gap-2">
-          <div className="flex w-48 justify-evenly bg-slate-100 p-3 rounded-full cursor-pointer">
-            <div>Build</div>
-            <div>Community</div>
-          </div>
-          <DynamicMuteSwitch />
+        <NavbarItem className="hidden sm:flex sm:justify-evenly sm:w-full lg:w-auto lg:gap-10 sm:gap-0">
+          <ButtonGroup className="pl-7 basis-5/6">
+            <Dropdown>
+              <DropdownTrigger>
+                <Button className="border-r-2 border-gray-50 bg-slate-200 flex">
+                  Build
+                  <Image
+                    src="/utils/down_btn.png"
+                    alt="down"
+                    width={10}
+                    height={10}
+                  />
+                </Button>
+              </DropdownTrigger>
+              <DropdownMenu aria-label="Static Actions">
+                <DropdownItem key="new">Zeko Faucet</DropdownItem>
+                <DropdownItem key="copy">Zeko Transfer</DropdownItem>
+                <DropdownItem key="edit">Zeko Docs</DropdownItem>
+              </DropdownMenu>
+            </Dropdown>
+            <Button className="bg-slate-200">Community</Button>
+          </ButtonGroup>
+          <DynamicMuteSwitch className="basis-1/6" />
         </NavbarItem>
       </NavbarContent>
 
