@@ -25,13 +25,13 @@ export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center">
       <div className="relative w-full lg:h-screen sm:h-full bg-gradient-to-t from-slate-300 to-slate-300">
-        <div className="w-screen h-full absolute top-0 z-0">
+        <div className="w-full h-full absolute top-0 z-0">
           <video autoPlay loop muted className="w-screen h-full object-cover">
             <source src="/background.webm" />
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="w-full flex flex-col justify-evenly h-full z-10">
+        <div className="w-full flex flex-col justify-between h-full z-10 pb-10">
           <Image
             src={"./logo.svg"}
             alt=""
@@ -57,7 +57,7 @@ export default function Home() {
               </h2>
             </div>
           </div>
-          <div className="w-full flex lg:flex-row sm:flex-col items-center gap-20 justify-between p-[5%] pt-0 mt-[10%]">
+          <div className="w-full flex lg:flex-row sm:flex-col items-center gap-20 justify-between p-[5%] pt-0">
             <div className="relative" onMouseEnter={handleMouseOver}>
               <div className="relative">
                 <Image
@@ -78,22 +78,26 @@ export default function Home() {
                 />
               </div>
               <div
-                className={`absolute w-full text-center card anime hide ${
+                className={`absolute w-full card anime hide ${
                   showCard > 0 ? "card-show show" : ""
                 }`}
               >
-                Zero-knowledge is the technology of Trust and the foundation for
-                building our future on blockchain
+                <div className="px-5">
+                  <b>Zero-knowledge</b> is the technology of Trust and the
+                  foundation for building our future on blockchain
+                </div>
               </div>
             </div>
             <div className="relative" onMouseEnter={handleMouseOver}>
               <div
-                className={`absolute w-full text-center card anime hide z-10 ${
+                className={`absolute w-full card anime hide z-10 ${
                   showCard > 1 ? "card-show show" : ""
                 }`}
               >
-                Zeko is powerful zktechnology for developers scaling their apps
-                to reach their booming ambitions  
+                <div className="px-5">
+                  Zeko is <b>powerful zktechnology</b> for developers scaling
+                  their apps to reach their booming ambitions  
+                </div>
               </div>
               <div className="relative">
                 <Image
@@ -134,11 +138,18 @@ export default function Home() {
                 />
               </div>
               <div
-                className={`absolute w-full text-center card anime hide ${
+                className={`absolute w-full card anime hide ${
                   showCard > 2 ? "card-show show" : ""
                 }`}
               >
-                In Zeko We Trust, We Build, We Scale
+                <div className="px-5">
+                  In Zeko
+                  <br /> We <b>Trust, </b>
+                  <br />
+                  We <b>Build, </b>
+                  <br />
+                  We <b>Scale</b>
+                </div>
               </div>
             </div>
           </div>
@@ -174,7 +185,7 @@ export default function Home() {
           <img src="./third-back.svg" alt="" width="100%" height="auto" />
         </div>
       </div>
-      <div className="w-full h-full p-[5%] flex justify-evenly bg-[#41568B] text-white sm:flex-col lg:flex-row sm:gap-10">
+      <div className="w-full h-full p-[10%] py-28 flex justify-evenly bg-[#41568B] text-white sm:flex-col lg:flex-row sm:gap-10">
         <div className="lg:w-72 sm:w-full lg:h-80 gap-5 sm:h-auto flex flex-col justify-between imgCont">
           <h1 className="text-4xl w-64">Advanced Rollup</h1>
           <p>
@@ -237,9 +248,20 @@ export default function Home() {
         <ServiceBtnTemplate type="Accessibility" />
         <ServiceBtnTemplate type="Origin" />
       </div>
-      <div className="w-full relative ">
+      <div className="w-full relative h-full">
         <div className="flex flex-col">
           <div className="flex sm:flex-col lg:flex-row justify-between gap-10 w-full absolute top-0 lg:p-24 sm:p-10 cardImgBack">
+            <div className="w-full h-full absolute top-0 z-0 left-0">
+              <video
+                autoPlay
+                loop
+                muted
+                className="w-screen h-full object-cover"
+              >
+                <source src="/background.webm" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
             <div
               className={`flex-col gap-5 lg:flex sm:${
                 cardPage === 1 ? "flex" : "hidden"

@@ -23,7 +23,6 @@ export const ServiceBtnTemplate = (props: any) => {
               alt="Button"
               width={80}
               height={80}
-              className="lg:w-[80px] sm:w-[50px]"
             />
           </div>
         </div>
@@ -34,7 +33,7 @@ export const ServiceBtnTemplate = (props: any) => {
         alt="Button"
         width={300}
         height={150}
-        className="svgCard lg:w-[300px] sm:w-[200px]"
+        className="svgCard"
       />
     </div>
   );
