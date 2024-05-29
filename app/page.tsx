@@ -24,22 +24,22 @@ export default function Home() {
   }, [showCard]);
   return (
     <section className="flex flex-col items-center justify-center">
-      <div className="relative w-full lg:h-screen sm:h-full bg-gradient-to-t from-slate-300 to-slate-300 pb-32">
-        <div className="w-screen -mt-32 h-full lg:relative sm:absolute">
-          <video autoPlay loop muted className="w-full h-[140%] object-cover">
+      <div className="relative w-full lg:h-screen sm:h-full bg-gradient-to-t from-slate-300 to-slate-300">
+        <div className="w-screen h-full absolute top-0 z-0">
+          <video autoPlay loop muted className="w-screen h-full object-cover">
             <source src="/background.webm" />
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="lg:absolute sm:relative top-0 w-full flex flex-col justify-evenly h-full">
+        <div className="w-full flex flex-col justify-evenly h-full z-10">
           <Image
             src={"./logo.svg"}
             alt=""
             width={180}
             height={40}
-            className="pl-[5%]"
+            className="pl-[5%] z-10"
           />
-          <div className="pl-[5%] lg:pt-[10%] sm:py-5">
+          <div className="pl-[5%] lg:pt-[10%] sm:py-5 z-10">
             <div
               className={`inline-block max-w-3xl justify-center ${fontLexendLight.className}`}
             >
@@ -144,12 +144,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="relative w-full">
-        <div className="w-full">
-          <img src="./second-back.svg" alt="" width="100%" height="auto" />
+      <div className="relative w-full bg-[#41568B]">
+        <div className="w-full h-full top-0 absolute object-cover z-0">
+          <img src="./second-back.svg" alt="" width="100%" className="h-full" />
         </div>
-        <div className="absolute top-0 p-[10%] text-white w-full flex flex-col justify-between h-full">
-          <div className="w-72 flex flex-col gap-3">
+        <div className="text-white flex flex-col justify-evenly p-[10%] gap-20">
+          <div className="w-72 flex flex-col gap-3 z-10">
             <hr />
             <h1 className="lg:text-4xl sm:text-2xl">Problem</h1>
             <p>
@@ -157,22 +157,24 @@ export default function Home() {
               trust.
             </p>
           </div>
-          <div className="w-72 ml-auto flex flex-col gap-3">
-            <hr />
-            <h1 className="lg:text-4xl sm:text-2xl">Solution</h1>
-            <p>
-              Zeko&apos;s simple zk rollup architecture seamlessly embeds trust
-              into every digital interaction.
-            </p>
+          <div className="w-full z-10">
+            <div className="w-72 float-right flex flex-col gap-3">
+              <hr />
+              <h1 className="lg:text-4xl sm:text-2xl">Solution</h1>
+              <p>
+                Zeko&apos;s simple zk rollup architecture seamlessly embeds
+                trust into every digital interaction.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      {/* <div className="w-full">
+      <div className="w-full">
         <div className="w-full">
           <img src="./third-back.svg" alt="" width="100%" height="auto" />
         </div>
-      </div> */}
-      <div className="w-full p-[5%] flex justify-between bg-[#41568B] text-white sm:flex-col lg:flex-row sm:gap-10">
+      </div>
+      <div className="w-full h-full p-[5%] flex justify-evenly bg-[#41568B] text-white sm:flex-col lg:flex-row sm:gap-10">
         <div className="lg:w-72 sm:w-full lg:h-80 gap-5 sm:h-auto flex flex-col justify-between imgCont">
           <h1 className="text-4xl w-64">Advanced Rollup</h1>
           <p>
@@ -228,7 +230,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="lg:hidden sm:flex flex-col gap-10 py-16">
+      <div className="lg:hidden sm:flex flex-col gap-10 py-16 px-16">
         <ServiceBtnTemplate type="Connection" />
         <ServiceBtnTemplate type="Repetition" />
         <ServiceBtnTemplate type="Legion" />
@@ -237,7 +239,7 @@ export default function Home() {
       </div>
       <div className="w-full relative ">
         <div className="flex flex-col">
-          <div className="flex sm:flex-col lg:flex-row justify-between gap-10 w-full absolute top-0 p-24 cardImgBack">
+          <div className="flex sm:flex-col lg:flex-row justify-between gap-10 w-full absolute top-0 lg:p-24 sm:p-10 cardImgBack">
             <div
               className={`flex-col gap-5 lg:flex sm:${
                 cardPage === 1 ? "flex" : "hidden"

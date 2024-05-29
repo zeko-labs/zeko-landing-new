@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const ServiceBtnTemplate = (props: any) => {
   return (
-    <div className="flex lg:flex-row md:flex-col gap-5 svgWithCardCont">
+    <div className="flex lg:flex-row sm:flex-col gap-5 svgWithCardCont">
       <div className="svgCont">
         <div className="svg-1">
           <div className="flex gap-7 items-center">
@@ -11,6 +11,7 @@ export const ServiceBtnTemplate = (props: any) => {
               alt="Button"
               width={80}
               height={80}
+              className="lg:w-[80px] sm:w-[50px]"
             />
             <div className="text-2xl">{props.type}</div>
           </div>
@@ -22,6 +23,7 @@ export const ServiceBtnTemplate = (props: any) => {
               alt="Button"
               width={80}
               height={80}
+              className="lg:w-[80px] sm:w-[50px]"
             />
           </div>
         </div>
@@ -32,7 +34,7 @@ export const ServiceBtnTemplate = (props: any) => {
         alt="Button"
         width={300}
         height={150}
-        className="svgCard"
+        className="svgCard lg:w-[300px] sm:w-[200px]"
       />
     </div>
   );
