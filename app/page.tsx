@@ -13,7 +13,7 @@ import { FifthSectionCard } from "@/components/section_5/SectionCard";
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center">
-      <div className="relative w-full lg:h-screen sm:h-full bg-gradient-to-t from-slate-300 to-slate-300">
+      <div className="relative w-full h-full">
         <div className="w-full h-full absolute top-0 z-0">
           <video autoPlay loop muted className="w-screen h-full object-cover">
             <source src="/background.webm" />
