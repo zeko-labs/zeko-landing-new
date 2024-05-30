@@ -5,6 +5,7 @@ import { fontLexend, fontLexendBold, fontLexendLight } from "@/config/fonts";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import "@/styles/cardAnimation.css";
+import "@/styles/animeProSol.css";
 import { BtnCircle } from "@/components/BtnCircle";
 import { Button } from "@nextui-org/button";
 import { ServiceBtnTemplate } from "@/components/ServiceBtnTemplate";
@@ -42,7 +43,7 @@ export default function Home() {
             alt=""
             width={180}
             height={100}
-            className="lg:pl-20 sm:pl-0 z-10 lg:w-48 sm:w-28"
+            className="lg:pl-20 sm:pl-0 z-10 lg:w-60 sm:w-28"
           />
           <div className="lg:pl-20 sm:px-5 lg:pt-20 sm:py-10 z-10">
             <div
@@ -147,12 +148,9 @@ export default function Home() {
                   showCard > 2 ? "card-show show" : ""
                 }`}
               >
-                <div className="px-5">
-                  In Zeko
-                  <br /> We <b>Trust, </b>
-                  <br />
+                <div className="px-5 pb-5">
+                  In Zeko We <b>Trust, </b>
                   We <b>Build, </b>
-                  <br />
                   We <b>Scale</b>
                 </div>
               </div>
@@ -166,18 +164,32 @@ export default function Home() {
         </div>
         <div className="text-white flex flex-col justify-evenly p-[10%] gap-20">
           <div className="lg:w-72 sm:w-52 flex flex-col gap-3 z-10">
-            <hr />
-            <h1 className="lg:text-4xl sm:text-2xl">Problem</h1>
-            <p>
+            <div className={`line ${showCard ? "visible" : ""}`}></div>
+            <h1
+              className={`lg:text-4xl sm:text-2xl ${
+                showCard ? "pro-sol-text" : "pro-sol-invisible"
+              }`}
+            >
+              Problem
+            </h1>
+            <p className={`${showCard ? "pro-sol-text" : "pro-sol-invisible"}`}>
               We live in a world of expanding technology and rapidly eroding
               trust.
             </p>
           </div>
           <div className="w-full z-10">
             <div className="lg:w-72 sm:w-52 float-right flex flex-col gap-3">
-              <hr />
-              <h1 className="lg:text-4xl sm:text-2xl">Solution</h1>
-              <p>
+              <div className={`line ${showCard ? "visible" : ""}`}></div>
+              <h1
+                className={`lg:text-4xl sm:text-2xl ${
+                  showCard ? "pro-sol-text" : "pro-sol-invisible"
+                }`}
+              >
+                Solution
+              </h1>
+              <p
+                className={`${showCard ? "pro-sol-text" : "pro-sol-invisible"}`}
+              >
                 Zeko&apos;s simple zk rollup architecture seamlessly embeds
                 trust into every digital interaction.
               </p>
@@ -216,12 +228,11 @@ export default function Home() {
           <div>
             Zeko reaches beyond the standard zkRollup or EVM L2 because it’s
             designed for any developer to recursively prove and bridge unlimited
-            off-chain computation across all blockchains whilst also maintaining
-            privacy{" "}
+            off-chain computation across all blockchains whilst also maintaining{" "}
             <div className="pictureTextCont">
-              <p className="pictureText">over user data &gt;&gt;</p>
+              <p className="pictureText">privacy over user data &gt;&gt;</p>
               <p className="pictureText-2">
-                over user data &nbsp;&nbsp;&gt;&gt;
+                privacy over user data &nbsp;&nbsp;&gt;&gt;
               </p>
             </div>
           </div>
@@ -234,11 +245,11 @@ export default function Home() {
           <div>
             Placing zero-knowledge proof capabilities into the hands of
             developers massively expands the design space for blockchain
-            applications as we{" "}
+            applications{" "}
             <div className="pictureTextCont">
-              <p className="pictureText">know them today &gt;&gt;</p>
+              <p className="pictureText">as we know them today &gt;&gt;</p>
               <p className="pictureText-2">
-                know them today &nbsp;&nbsp;&gt;&gt;
+                as we know them today &nbsp;&nbsp;&gt;&gt;
               </p>
             </div>
           </div>

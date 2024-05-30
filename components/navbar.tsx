@@ -79,7 +79,15 @@ export const Navbar = () => {
                 <DropdownItem key="edit">Zeko Docs</DropdownItem>
               </DropdownMenu>
             </Dropdown>
-            <Button className="bg-slate-200">Community</Button>
+            <Button className="bg-slate-200 flex">
+              Community
+              <Image
+                src="/utils/down_btn.png"
+                alt="down"
+                width={10}
+                height={10}
+              />
+            </Button>
           </ButtonGroup>
           <DynamicMuteSwitch className="basis-1/6" />
         </NavbarItem>

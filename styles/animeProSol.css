@@ -1,0 +1,35 @@
+.line {
+  border-bottom: 2px solid transparent;
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+.line.visible {
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+
+@keyframes textBlurToSolid {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.pro-sol-text {
+  opacity: 0;
+  filter: blur(10px);
+  animation: textBlurToSolid 2s forwards;
+}
+
+.pro-sol-invisible {
+  opacity: 0;
+}
