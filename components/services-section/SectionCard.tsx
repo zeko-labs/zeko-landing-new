@@ -22,7 +22,7 @@ export const ServicesSectionCard = (props: any) => {
   const { type } = props;
   return (
     <div className="lg:w-80 sm:w-full lg:h-80 gap-5 sm:h-auto flex flex-col justify-between imgCont cursor-pointer">
-      <h1 className="text-4xl">
+      <h1 className="lg:text-4xl sm:text-2xl">
         <b>{textList[type].title}</b>
       </h1>
       <div>

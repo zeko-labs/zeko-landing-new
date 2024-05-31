@@ -18,6 +18,7 @@ import {
   DropdownMenu,
   DropdownItem,
 } from "@nextui-org/dropdown";
+import Link from "next/link";
 
 const DynamicMuteSwitch = dynamic(() => import("./mute-switch"), {
   ssr: false,
@@ -42,7 +43,7 @@ export const Navbar = () => {
   return (
     <NextUINavbar
       // className={clsx("bg-opacity-100 backdrop-blur-sm bg-transparent")}
-      className="bg-transparent p-5"
+      className="bg-transparent backdrop-blur-sm p-5"
       maxWidth="2xl"
       position="sticky"
       height={80}
@@ -74,28 +75,53 @@ export const Navbar = () => {
                 </Button>
               </DropdownTrigger>
               <DropdownMenu aria-label="Static Actions">
-                <DropdownItem key="new">Zeko Faucet</DropdownItem>
-                <DropdownItem key="copy">Zeko Transfer</DropdownItem>
-                <DropdownItem key="edit">Zeko Docs</DropdownItem>
+                <DropdownItem key="faucet">
+                  <Link href="/faucet">Zeko Faucet</Link>
+                </DropdownItem>
+                <DropdownItem key="transfer">
+                  <Link href="/send">Zeko Transfer</Link>
+                </DropdownItem>
+                <DropdownItem key="docs">
+                  <Link href="">Zeko Docs</Link>
+                </DropdownItem>
+                <DropdownItem key="boost">
+                  <Link href="/zekoboost">Zeko Boost</Link>
+                </DropdownItem>
               </DropdownMenu>
             </Dropdown>
-            <Button className="bg-slate-200 flex">
-              Community
-              <Image
-                src="/utils/down_btn.png"
-                alt="down"
-                width={10}
-                height={10}
-              />
-            </Button>
+            <Dropdown>
+              <DropdownTrigger>
+                <Button className="border-r-2 border-gray-50 bg-slate-200 flex">
+                  Community
+                  <Image
+                    src="/utils/down_btn.png"
+                    alt="down"
+                    width={10}
+                    height={10}
+                  />
+                </Button>
+              </DropdownTrigger>
+              <DropdownMenu aria-label="Static Actions">
+                <DropdownItem key="discord">
+                  <Link href="https://discord.gg/vSDxqAchUY">Discord</Link>
+                </DropdownItem>
+                <DropdownItem key="telegram">
+                  <Link href="https://t.me/+m8LBsR2kNTAxNmFh">Telegram</Link>
+                </DropdownItem>
+                <DropdownItem key="twitter">
+                  <Link href="https://twitter.com/ZekoLabs">X</Link>
+                </DropdownItem>
+                <DropdownItem key="brand">Brand</DropdownItem>
+              </DropdownMenu>
+            </Dropdown>
           </ButtonGroup>
           <DynamicMuteSwitch className="basis-1/6" />
         </NavbarItem>
       </NavbarContent>
-
+      {/* 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
         <DynamicMuteSwitch />
-      </NavbarContent>
+      </NavbarContent> */}
     </NextUINavbar>
   );
 };

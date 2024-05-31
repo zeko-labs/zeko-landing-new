@@ -53,15 +53,9 @@ export const subtitle = tv({
 });
 
 export const card = {
-  backgroundImage: `url("/card/back.png")`,
+  backgroundImage: `url("/card/adback.png")`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
-  padding: "20px",
-};
-
-export const card_2 = {
-  backgroundImage: `url("/card/back-hover.png")`,
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
+  height: "500px",
   padding: "20px",
 };

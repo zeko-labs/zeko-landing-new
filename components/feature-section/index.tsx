@@ -29,7 +29,7 @@ export const FeatureSection = () => {
           </div>
         </div>
       </div>
-      <div className="relative lg:hidden sm:flex flex-col gap-10 p-16 bg-[#E0E9FD] w-full">
+      <div className="relative lg:hidden sm:flex flex-col gap-10 lg:p-16 sm:p-8 bg-[#E0E9FD] w-full">
         <div className="w-full h-full absolute top-[300px] z-0 left-0 object-cover">
           <Image
             src="/utils/back-form.png"

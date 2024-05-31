@@ -90,3 +90,12 @@
 .imgCont:hover .pictureText-2 {
   opacity: 1;
 }
+
+.goldenCardText {
+  font-weight: bold;
+  background: url("/gold.png");
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: cover;
+  font-size: x-large;
+}

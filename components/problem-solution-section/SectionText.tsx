@@ -47,11 +47,13 @@ export const ProblemSolutionSectionText = () => {
             animateOnce={true}
             animateIn="visible"
             className="line"
+            delay={2000}
           ></ScrollAnimation>
           <ScrollAnimation
             animateOnce={true}
             animateIn="pro-sol-text"
             className="pro-sol-invisible"
+            delay={2000}
           >
             <h1 className="lg:text-4xl sm:text-2xl">Solution</h1>
             <p>
