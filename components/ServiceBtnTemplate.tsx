@@ -4,7 +4,7 @@ import { FeatureCard } from "./feature-card";
 export const ServiceBtnTemplate = (props: any) => {
   const returnIndex = (type: any) => {
     switch (type) {
-      case "Accessbility":
+      case "Accessibility":
         return 0;
       case "Connection":
         return 1;

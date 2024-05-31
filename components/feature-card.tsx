@@ -1,6 +1,6 @@
 const goldenTextData = [
   {
-    title: "Accessbility",
+    title: "Accessibility",
     body: "Developers can write and deploy applications today to a Zeko L2 that is isomorphic to the MinaL1, or spin up to your own custom zkAppChains.",
   },
   {
@@ -23,7 +23,11 @@ const goldenTextData = [
 
 export const FeatureCard = (props: any) => {
   return (
-    <div className="svgCard lg:absolute lg:left-[110px] sm:relative sm:left-0">
+    <div
+      className={`svgCard lg:absolute lg:left-[110px] sm:relative sm:left-0 ${
+        props.type === 0 ? "-top-10" : ""
+      }`}
+    >
       <div className="lg:w-[340px] sm:w-full lg:h-[180px] sm:h-auto rounded-lg p-5 bg-opacity-50 bg-slate-100 z-20 flex flex-col justify-center">
         <div className="goldenCardText">{goldenTextData[props.type].title}</div>
         <div className="">{goldenTextData[props.type].body}</div>
