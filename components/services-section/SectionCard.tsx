@@ -18,7 +18,7 @@ const textList = [
   },
 ];
 
-export const ThirdSectionCard = (props: any) => {
+export const ServicesSectionCard = (props: any) => {
   const { type } = props;
   return (
     <div className="lg:w-80 sm:w-full lg:h-80 gap-5 sm:h-auto flex flex-col justify-between imgCont cursor-pointer">

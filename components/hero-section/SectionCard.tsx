@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-export const FirstSectionCard = () => {
+export const HeroSectionCard = () => {
   const [showCard, setShowCard] = useState(0);
 
   useEffect(() => {
@@ -39,8 +39,8 @@ export const FirstSectionCard = () => {
           />
         </div>
         <div
-          className={`absolute w-full card anime hide ${
-            showCard > 0 ? "card-show show" : ""
+          className={`absolute w-full card card-show anime hide ${
+            showCard > 0 ? "show" : ""
           }`}
         >
           <div className="px-5">
@@ -51,8 +51,8 @@ export const FirstSectionCard = () => {
       </div>
       <div className="relative">
         <div
-          className={`absolute w-full card anime hide z-10 ${
-            showCard > 1 ? "card-show show" : ""
+          className={`absolute w-full card card-show anime hide z-10 ${
+            showCard > 1 ? "show" : ""
           }`}
         >
           <div className="px-5">
@@ -99,8 +99,8 @@ export const FirstSectionCard = () => {
           />
         </div>
         <div
-          className={`absolute w-full card anime hide ${
-            showCard > 2 ? "card-show show" : ""
+          className={`absolute w-full card card-show anime hide ${
+            showCard > 2 ? "show" : ""
           }`}
         >
           <div className="px-5 pb-5">

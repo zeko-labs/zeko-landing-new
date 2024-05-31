@@ -3,7 +3,11 @@
 }
 
 .card-show {
-  bottom: 50px;
+  bottom: calc(50% - 50px);
+}
+
+.card-show-2 {
+  bottom: 0px;
 }
 
 .anime {

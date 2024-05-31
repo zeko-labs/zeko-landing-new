@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.compat.css";
 
-export const SecondSectionText = () => {
+export const ProblemSolutionSectionText = () => {
   const [showCard, setShowCard] = useState(0);
   const style = {
     borderBottom: "2px solid white",

@@ -3,7 +3,7 @@ import { Button } from "@nextui-org/button";
 import { card } from "@/components/primitives";
 import Image from "next/image";
 
-export const FifthSectionCard = () => {
+export const AnnouncementSectionCard = () => {
   const [cardPage, setCardPage] = useState(1);
   return (
     <div className="flex sm:flex-col lg:flex-row justify-between gap-10 w-full absolute top-0 lg:p-24 sm:p-10 cardImgBack">

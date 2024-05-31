@@ -1,4 +1,6 @@
 import "@/styles/globals.css";
+import "@/styles/cardAnimation.css";
+import "@/styles/animeProSol.css";
 import { Metadata, Viewport } from "next";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";

@@ -1,7 +1,7 @@
 import { title, subtitle } from "@/components/primitives";
 import { fontLexend, fontLexendBold, fontLexendLight } from "@/config/fonts";
 
-export const FirstSectionText = () => {
+export const HeroSectionText = () => {
   return (
     <div className="lg:pl-20 sm:px-5 lg:pt-20 sm:py-10 z-10">
       <div
