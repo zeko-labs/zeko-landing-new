@@ -5,13 +5,17 @@ import Image from "next/image";
 
 import Carousal from "@itseasy21/react-elastic-carousel";
 
+interface CarouselRef {
+  goTo: (index: number) => void;
+}
+
 export const AnnouncementSectionCard = () => {
   const [cardPage, setCardPage] = useState(0);
   const carouselRef = useRef(null);
 
   const goToItem = (index: number) => {
     if (carouselRef.current) {
-      carouselRef.current.goTo(index);
+      // carouselRef.current.goTo(index);
     }
   };
 
