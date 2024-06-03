@@ -25,7 +25,7 @@ export const FeatureCard = (props: any) => {
   return (
     <div
       className={`svgCard lg:absolute lg:left-[110px] sm:relative sm:left-0 ${
-        props.type === 0 ? "-top-10" : ""
+        props.type === 0 ? "lg:-top-10" : ""
       }`}
     >
       <div className="lg:w-[340px] sm:w-full lg:h-[180px] sm:h-auto rounded-lg p-5 bg-opacity-50 bg-slate-100 z-20 flex flex-col justify-center">

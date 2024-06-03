@@ -13,14 +13,22 @@ export const AnnouncementSectionCard = () => {
   const [cardPage, setCardPage] = useState(0);
   const carouselRef = useRef(null);
 
-  const goToItem = (index: number) => {
-    if (carouselRef.current) {
-      // carouselRef.current.goTo(index);
+  const goToItem = (type: number) => {
+    console.log(cardPage);
+    switch (type) {
+      case 0:
+        (carouselRef.current as any).slidePrev();
+        setCardPage(cardPage - 1);
+        break;
+      default:
+        (carouselRef.current as any).slideNext();
+        setCardPage(cardPage + 1);
+        break;
     }
   };
 
   return (
-    <div className="flex sm:flex-col lg:flex-row justify-between gap-10 w-full absolute top-0 lg:p-24 sm:p-5 cardImgBack">
+    <div className="flex sm:flex-col lg:flex-row justify-between lg:gap-10 w-full absolute top-0 lg:p-24 sm:p-5 cardImgBack items-center">
       <div className="w-full h-full absolute top-0 z-0 left-0">
         <video autoPlay loop muted className="w-screen h-full object-cover">
           <source src="/background.webm" />
@@ -72,8 +80,13 @@ export const AnnouncementSectionCard = () => {
         </div>
       </div>
       <div className="lg:hidden sm:flex w-full">
-        <Carousal isRTL={false} ref={carouselRef} showArrows={false}>
-          <div className="flex flex-col h-[600px] justify-between">
+        <Carousal
+          isRTL={false}
+          ref={carouselRef}
+          showArrows={false}
+          onChange={(e) => setCardPage(e.index)}
+        >
+          <div className="flex flex-col justify-between">
             <div className="relative">
               <div
                 style={card}
@@ -90,25 +103,8 @@ export const AnnouncementSectionCard = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full lg:hidden sm:block lg:mt-5 sm:mt-7">
-              <Button
-                radius="full"
-                className="float-right"
-                isIconOnly={true}
-                variant="bordered"
-                size="lg"
-                onClick={() => goToItem(1)}
-              >
-                <Image
-                  src="/utils/next_btn.png"
-                  alt="next"
-                  width={30}
-                  height={30}
-                />
-              </Button>
-            </div>
           </div>
-          <div className="flex flex-col h-[600px] justify-between">
+          <div className="flex flex-col justify-between">
             <div className="relative">
               <div
                 style={card}
@@ -123,40 +119,8 @@ export const AnnouncementSectionCard = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full flex justify-between lg:hidden sm:flex mt-5">
-              <Button
-                radius="full"
-                className="float-right"
-                isIconOnly={true}
-                variant="bordered"
-                size="lg"
-                onClick={() => goToItem(0)}
-              >
-                <Image
-                  src="/utils/back_btn.png"
-                  alt="back"
-                  width={30}
-                  height={30}
-                />
-              </Button>
-              <Button
-                radius="full"
-                className="float-right"
-                isIconOnly={true}
-                variant="bordered"
-                size="lg"
-                onClick={() => goToItem(2)}
-              >
-                <Image
-                  src="/utils/next_btn.png"
-                  alt="next"
-                  width={30}
-                  height={30}
-                />
-              </Button>
-            </div>
           </div>
-          <div className="flex flex-col h-[600px] justify-between">
+          <div className="flex flex-col justify-between">
             <div className="relative ">
               <div
                 style={card}
@@ -171,25 +135,30 @@ export const AnnouncementSectionCard = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full flex justify-between lg:hidden sm:flex mt-5">
-              <Button
-                radius="full"
-                className="float-right"
-                isIconOnly={true}
-                variant="bordered"
-                size="lg"
-                onClick={() => goToItem(1)}
-              >
-                <Image
-                  src="/utils/back_btn.png"
-                  alt="back"
-                  width={30}
-                  height={30}
-                />
-              </Button>
-            </div>
           </div>
         </Carousal>
+      </div>
+      <div className="cd:w-[400px] sm:w-full cd:px-0 sm:px-2 flex justify-between lg:hidden sm:flex mt-5">
+        <Button
+          radius="full"
+          className={`float-right ${cardPage === 0 ? "invisible" : ""}`}
+          isIconOnly={true}
+          variant="bordered"
+          size="lg"
+          onClick={() => goToItem(0)}
+        >
+          <Image src="/utils/back_btn.png" alt="back" width={30} height={30} />
+        </Button>
+        <Button
+          radius="full"
+          className={`float-right ${cardPage === 2 ? "invisible" : ""}`}
+          isIconOnly={true}
+          variant="bordered"
+          size="lg"
+          onClick={() => goToItem(1)}
+        >
+          <Image src="/utils/next_btn.png" alt="back" width={30} height={30} />
+        </Button>
       </div>
     </div>
   );
