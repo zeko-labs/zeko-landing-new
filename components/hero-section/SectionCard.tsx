@@ -105,7 +105,7 @@ export const HeroSectionCard = () => {
             showCard > 2 ? "show" : ""
           }`}
         >
-          <div className="lg:px-5 pb-5 sm:px-1 lg:text-base sm:text-sm">
+          <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
             Zeko <b>amplifies</b> the potential for good
             <br />
             In Zeko We <b>Trust</b>, We <b>Build</b>, We <b>Scale</b>

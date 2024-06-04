@@ -15,7 +15,7 @@ const textList = [
   {
     title: "Expanding Blockchain Design",
     text: "Placing zero-knowledge proof capabilities with easy implementation into the hands of developers is a game changer for innovative blockchain applications because it ",
-    goldText: "as we know them today ",
+    goldText: "massively expands the design space ",
   },
 ];
 
