@@ -36,8 +36,7 @@ export const ProblemSolutionSectionText = () => {
         >
           <h1 className="lg:text-4xl sm:text-2xl">Problem</h1>
           <p>
-            We live in a world of expanding technology and rapidly eroding
-            trust.
+            We live in a world of expanding technology and rapidly eroding trust
           </p>
         </ScrollAnimation>
       </div>
@@ -58,7 +57,7 @@ export const ProblemSolutionSectionText = () => {
             <h1 className="lg:text-4xl sm:text-2xl">Solution</h1>
             <p>
               Zeko&apos;s simple zk rollup architecture seamlessly embeds trust
-              into every digital interaction.
+              into every digital interaction
             </p>
           </ScrollAnimation>
         </div>

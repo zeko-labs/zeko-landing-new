@@ -2,8 +2,9 @@ import { BtnCircle } from "../BtnCircle";
 
 const textList = [
   {
-    title: "Advanced Rollup",
-    text: "Zeko is a completely different type of rollup protocol. It is designed for developers to easily access a rich set of zero-knowledge features for proof generation, verification, recursion, and more ",
+    title1: "Advanced",
+    title2: "Rollup",
+    text: "Zeko is a completely different type of rollup protocol designed for developers to easily access a rich set of zero-knowledge features for proof generation, verification, recursion, and more ",
     goldText: "all using typescript ",
   },
   {
@@ -13,7 +14,7 @@ const textList = [
   },
   {
     title: "Expanding Blockchain Design",
-    text: "Placing zero-knowledge proof capabilities into the hands of developers massively expands the design space for blockchain applications ",
+    text: "Placing zero-knowledge proof capabilities with easy implementation into the hands of developers is a game changer for innovative blockchain applications because it ",
     goldText: "as we know them today ",
   },
 ];
@@ -23,7 +24,16 @@ export const ServicesSectionCard = (props: any) => {
   return (
     <div className="lg:w-80 sm:w-full lg:h-80 gap-5 sm:h-auto flex flex-col justify-between imgCont cursor-pointer">
       <h1 className="lg:text-4xl sm:text-2xl">
-        <b>{textList[type].title}</b>
+        <b>
+          {type === 0 ? (
+            <>
+              <div>{textList[type].title1}</div>
+              <div>{textList[type].title2}</div>
+            </>
+          ) : (
+            textList[type].title
+          )}
+        </b>
       </h1>
       <div>
         {textList[type].text}

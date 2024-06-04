@@ -44,8 +44,9 @@ export const HeroSectionCard = () => {
           }`}
         >
           <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
-            <b>Zero-knowledge</b> is the technology of Trust and the foundation
-            for building our future on blockchain
+            <b>Zero-knowledge</b> is the technology of Trust, the
+            <br />
+            foundation for building our <b>future on blockchain</b>
           </div>
         </div>
       </div>
@@ -56,8 +57,9 @@ export const HeroSectionCard = () => {
           }`}
         >
           <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
-            Zeko is <b>powerful zktechnology</b> for developers scaling their
-            apps to reach their booming ambitions  
+            Zeko is <b>powerful zktechnology</b> for developers
+            <br />
+            scaling their apps to <b>reach their ambitions</b>
           </div>
         </div>
         <div className="relative">
@@ -104,9 +106,9 @@ export const HeroSectionCard = () => {
           }`}
         >
           <div className="lg:px-5 pb-5 sm:px-1 lg:text-base sm:text-sm">
-            In Zeko We <b>Trust, </b>
-            We <b>Build, </b>
-            We <b>Scale</b>
+            Zeko <b>amplifies</b> the potential for good
+            <br />
+            In Zeko We <b>Trust</b>, We <b>Build</b>, We <b>Scale</b>
           </div>
         </div>
       </div>

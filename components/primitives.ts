@@ -46,6 +46,9 @@ export const subtitle = tv({
     fullWidth: {
       true: "!w-full",
     },
+    noMargin: {
+      true: "my-0",
+    },
   },
   defaultVariants: {
     fullWidth: true,
@@ -59,3 +62,7 @@ export const card = {
   height: "500px",
   padding: "20px",
 };
+
+export const label = tv({
+  base: "text-sm",
+});

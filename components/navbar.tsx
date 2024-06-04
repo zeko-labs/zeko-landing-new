@@ -3,13 +3,10 @@
 import {
   Navbar as NextUINavbar,
   NavbarContent,
-  NavbarBrand,
   NavbarItem,
 } from "@nextui-org/navbar";
-import NextLink from "next/link";
 import dynamic from "next/dynamic";
 import { useCallback, useEffect, useState } from "react";
-import clsx from "clsx";
 import Image from "next/image";
 import { Button, ButtonGroup } from "@nextui-org/button";
 import {
@@ -18,7 +15,7 @@ import {
   DropdownMenu,
   DropdownItem,
 } from "@nextui-org/dropdown";
-import Link from "next/link";
+import { Link } from "@nextui-org/link";
 
 const DynamicMuteSwitch = dynamic(() => import("./mute-switch"), {
   ssr: false,
@@ -42,20 +39,11 @@ export const Navbar = () => {
 
   return (
     <NextUINavbar
-      // className={clsx("bg-opacity-100 backdrop-blur-sm bg-transparent")}
       className="bg-transparent backdrop-blur-sm p-5"
       maxWidth="2xl"
       position="sticky"
       height={80}
     >
-      {/* <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
-        <NavbarBrand as="li" className="gap-3 max-w-fit">
-          <NextLink className="py-2" href="/">
-            <Image src={"./logo.svg"} alt="" width={180} height={40} />
-          </NextLink>
-        </NavbarBrand>
-      </NavbarContent> */}
-
       <NavbarContent
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
@@ -76,16 +64,41 @@ export const Navbar = () => {
               </DropdownTrigger>
               <DropdownMenu aria-label="Static Actions">
                 <DropdownItem key="faucet">
-                  <Link href="/faucet">Zeko Faucet</Link>
+                  <Link
+                    href="https://zeko.io/faucet"
+                    className="text-black w-full"
+                    aria-label="faucet"
+                  >
+                    Zeko Faucet
+                  </Link>
                 </DropdownItem>
                 <DropdownItem key="transfer">
-                  <Link href="/send">Zeko Transfer</Link>
+                  <Link
+                    href="https://zeko.io/send"
+                    className="text-black w-full"
+                    aria-label="transfer"
+                  >
+                    Zeko Transfer
+                  </Link>
                 </DropdownItem>
                 <DropdownItem key="docs">
-                  <Link href="">Zeko Docs</Link>
+                  <Link
+                    isExternal
+                    href="https://docsend.com/view/f9a6kgdr4tjwuqng"
+                    className="text-black w-full"
+                    aria-label="docs"
+                  >
+                    Zeko Docs
+                  </Link>
                 </DropdownItem>
                 <DropdownItem key="boost">
-                  <Link href="/zekoboost">Zeko Boost</Link>
+                  <Link
+                    href="https://zeko.io/zekoboost"
+                    className="text-black w-full"
+                    aria-label="zekoboost"
+                  >
+                    Zeko Boost
+                  </Link>
                 </DropdownItem>
               </DropdownMenu>
             </Dropdown>
@@ -101,17 +114,40 @@ export const Navbar = () => {
                   />
                 </Button>
               </DropdownTrigger>
-              <DropdownMenu aria-label="Static Actions">
+              <DropdownMenu aria-label="Actions-2">
                 <DropdownItem key="discord">
-                  <Link href="https://discord.gg/vSDxqAchUY">Discord</Link>
+                  <Link
+                    isExternal
+                    href="https://discord.gg/vSDxqAchUY"
+                    className="text-black w-full"
+                    aria-label="discord"
+                  >
+                    Discord
+                  </Link>
                 </DropdownItem>
                 <DropdownItem key="telegram">
-                  <Link href="https://t.me/+m8LBsR2kNTAxNmFh">Telegram</Link>
+                  <Link
+                    isExternal
+                    href="https://t.me/+m8LBsR2kNTAxNmFh"
+                    className="text-black w-full"
+                    aria-label="telegram"
+                  >
+                    Telegram
+                  </Link>
                 </DropdownItem>
                 <DropdownItem key="twitter">
-                  <Link href="https://twitter.com/ZekoLabs">X</Link>
+                  <Link
+                    isExternal
+                    href="https://twitter.com/ZekoLabs"
+                    className="text-black w-full"
+                    aria-label="twitter"
+                  >
+                    X
+                  </Link>
                 </DropdownItem>
-                <DropdownItem key="brand">Brand</DropdownItem>
+                <DropdownItem key="brand" className=" w-full">
+                  Brand
+                </DropdownItem>
               </DropdownMenu>
             </Dropdown>
           </ButtonGroup>

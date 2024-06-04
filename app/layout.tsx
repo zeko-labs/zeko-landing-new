@@ -40,6 +40,12 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
+        {/* <div className="fixed w-screen h-screen -z-10">
+          <video autoPlay loop muted className="w-full h-full object-cover">
+            <source src="/background.webm" />
+            Your browser does not support the video tag.
+          </video>
+        </div> */}
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <div className="relative flex flex-col bg-slate-50">
             <Navbar />

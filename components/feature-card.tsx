@@ -17,7 +17,7 @@ const goldenTextData = [
   },
   {
     title: "Legion",
-    body: "Placing zero-knowledge proof capabilities into the hands of developers massively expands the design space for blockchain applications as we know them today.",
+    body: "Zeko enables a community of developers who innovate their decentralized applications, optimize performance, and enhance the user experience. We inspire the next generation of zk applications that will shape the future and transform our lives.",
   },
 ];
 
@@ -25,10 +25,10 @@ export const FeatureCard = (props: any) => {
   return (
     <div
       className={`svgCard lg:absolute lg:left-[110px] sm:relative sm:left-0 ${
-        props.type === 0 ? "lg:-top-10" : ""
+        props.type === 4 ? "lg:-top-20" : props.type === 0 ? "lg:-top-10" : ""
       }`}
     >
-      <div className="lg:w-[340px] sm:w-full lg:h-[180px] sm:h-auto rounded-lg p-5 bg-opacity-50 bg-slate-100 z-20 flex flex-col justify-center">
+      <div className="lg:w-[340px] sm:w-full h-auto rounded-lg p-5 bg-opacity-50 bg-slate-100 z-20 flex flex-col justify-center">
         <div className="goldenCardText">{goldenTextData[props.type].title}</div>
         <div className="">{goldenTextData[props.type].body}</div>
       </div>
