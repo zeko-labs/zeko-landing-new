@@ -4,7 +4,7 @@ const textList = [
   {
     title1: "Advanced",
     title2: "Rollup",
-    text: "Zeko is a completely different type of rollup protocol designed for developers to easily access a rich set of zero-knowledge features for proof generation, verification, recursion, and more ",
+    text: "Zeko is a completely different type of rollup protocol designed for developers to easily access a rich set of zero-knowledge features for proof generation, verification, recursion, and more by ",
     goldText: "all using typescript ",
   },
   {
@@ -14,7 +14,7 @@ const textList = [
   },
   {
     title: "Expanding Blockchain Design",
-    text: "Placing zero-knowledge proof capabilities with easy implementation into the hands of developers is a game changer for innovative blockchain applications because it ",
+    text: "Placing zero-knowledge proof capabilities with easy implementation into the hands of developers is a game-changer for innovative blockchain applications which massively ",
     goldText: "massively expands the design space ",
   },
 ];

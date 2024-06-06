@@ -5,8 +5,13 @@ import { HeroSectionText } from "./SectionText";
 export const HeroSection = () => {
   return (
     <div className="relative w-full h-full">
-      <div className="w-full h-full absolute top-0 z-0">
-        <video autoPlay loop muted className="w-screen h-full object-cover">
+      <div className="w-full h-[120%] absolute top-0 z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          className="w-screen h-full object-cover -mt-20"
+        >
           <source src="/background.webm" />
           Your browser does not support the video tag.
         </video>
@@ -20,7 +25,7 @@ export const HeroSection = () => {
           className="lg:pl-20 sm:pl-0 z-10 lg:w-60 sm:w-28"
         />
         <HeroSectionText />
-        <HeroSectionCard />
+        {/* <HeroSectionCard /> */}
       </div>
     </div>
   );

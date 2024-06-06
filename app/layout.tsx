@@ -7,6 +7,7 @@ import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
 import clsx from "clsx";
 import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   title: {
@@ -40,17 +41,11 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        {/* <div className="fixed w-screen h-screen -z-10">
-          <video autoPlay loop muted className="w-full h-full object-cover">
-            <source src="/background.webm" />
-            Your browser does not support the video tag.
-          </video>
-        </div> */}
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <div className="relative flex flex-col bg-slate-50">
             <Navbar />
             <main className="flex-grow">{children}</main>
-            <footer className="w-full flex items-center justify-center py-3"></footer>
+            <Footer />
           </div>
         </Providers>
       </body>

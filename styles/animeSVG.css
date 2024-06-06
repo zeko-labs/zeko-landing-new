@@ -59,6 +59,8 @@
 }
 
 .pictureText {
+  position: absolute;
+  top: 0;
   font-weight: bold;
   color: white;
   transition: 1s;
@@ -67,13 +69,11 @@
 
 .pictureTextCont {
   display: inline-block;
-  width: 240px;
+  width: auto;
   position: relative;
 }
 
 .pictureText-2 {
-  position: absolute;
-  top: 0;
   font-weight: bold;
   background: url("/gold.png");
   -webkit-background-clip: text;
@@ -81,6 +81,11 @@
   background-size: cover;
   transition: 1s;
   opacity: 0;
+}
+
+.page-break-back {
+  background: url("/third-back.svg");
+  background-size: cover;
 }
 
 .imgCont:hover .pictureText {
