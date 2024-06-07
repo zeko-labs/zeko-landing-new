@@ -31,11 +31,16 @@ export const AnnouncementSectionCard = () => {
     // <div className="flex flex-col mb-40">
     <div className="flex sm:flex-col lg:flex-row justify-between lg:gap-10 w-full top-0 lg:p-24 sm:p-5 cardImgBack items-center">
       <div className="w-full absolute top-0 z-0 left-0">
-        <video autoPlay loop muted className="w-screen h-[800px] object-cover">
+        <video
+          autoPlay
+          loop
+          muted
+          className="w-screen lg:h-[900px] sm:h-[800px] object-cover"
+        >
           <source src="/background.webm" />
           Your browser does not support the video tag.
         </video>
-        <div className="justify-evenly text-3xl border-t-2 border-black pt-8 absolute bottom-20 lg:flex sm:hidden w-full">
+        <div className="justify-evenly text-3xl border-t-2 border-black pt-8 absolute bottom-24 lg:flex sm:hidden w-full">
           <div>© 2024 ZekoLabs.</div>
           <div>All Rights Reserved.</div>
           <div>Terms of Service</div>

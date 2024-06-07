@@ -36,8 +36,8 @@ export default function SendPage() {
     }
   };
   return (
-    <div className="pb-6">
-      <h1 className={title()}>Send</h1>
+    <div className="pb-6 relative">
+      <h1 className={`${title()}`}>Send</h1>
 
       <div className="flex flex-col gap-2 text-left mt-10">
         <h2 className={subtitle({ noMargin: true })}>

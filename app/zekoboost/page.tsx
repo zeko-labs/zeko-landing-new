@@ -15,7 +15,7 @@ export default function BoostPage() {
     "/splash/4.png",
   ];
   return (
-    <div className="flex flex-col items-center gap-8 w-full mb-20">
+    <div className="flex flex-col items-center gap-8 w-full mb-40 relative">
       <button onClick={() => setSubPage(0)}>
         <Image
           src={"/splash/ZekoBoost.png"}

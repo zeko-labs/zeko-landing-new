@@ -6,7 +6,7 @@ import { Button } from "@nextui-org/button";
 export const HeroSection = () => {
   return (
     <div className="relative w-full h-full">
-      <div className="w-full h-[120%] absolute top-0 z-0">
+      <div className="w-full h-[120%] absolute top-0 z-10">
         <video
           autoPlay
           loop

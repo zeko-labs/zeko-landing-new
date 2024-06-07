@@ -65,7 +65,7 @@ export const Navbar = () => {
               <DropdownMenu aria-label="Static Actions">
                 <DropdownItem key="faucet">
                   <Link
-                    href="https://zeko.io/faucet"
+                    href="/faucet"
                     className="text-black w-full"
                     aria-label="faucet"
                   >
@@ -74,7 +74,7 @@ export const Navbar = () => {
                 </DropdownItem>
                 <DropdownItem key="transfer">
                   <Link
-                    href="https://zeko.io/send"
+                    href="/send"
                     className="text-black w-full"
                     aria-label="transfer"
                   >
@@ -93,7 +93,7 @@ export const Navbar = () => {
                 </DropdownItem>
                 <DropdownItem key="boost">
                   <Link
-                    href="https://zeko.io/zekoboost"
+                    href="/zekoboost"
                     className="text-black w-full"
                     aria-label="zekoboost"
                   >

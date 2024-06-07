@@ -43,6 +43,17 @@ export default function RootLayout({
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <div className="relative flex flex-col bg-slate-50">
+            <div className="w-full h-full absolute top-0 z-0 left-0">
+              <video
+                autoPlay
+                loop
+                muted
+                className="w-screen h-full object-cover"
+              >
+                <source src="/background.webm" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
             <Navbar />
             <main className="flex-grow">{children}</main>
             <Footer />
