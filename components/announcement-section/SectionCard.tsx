@@ -30,11 +30,17 @@ export const AnnouncementSectionCard = () => {
   return (
     // <div className="flex flex-col mb-40">
     <div className="flex sm:flex-col lg:flex-row justify-between lg:gap-10 w-full top-0 lg:p-24 sm:p-5 cardImgBack items-center">
-      <div className="w-full h-full absolute top-0 z-0 left-0">
-        <video autoPlay loop muted className="w-screen h-full object-cover">
+      <div className="w-full absolute top-0 z-0 left-0">
+        <video autoPlay loop muted className="w-screen h-[800px] object-cover">
           <source src="/background.webm" />
           Your browser does not support the video tag.
         </video>
+        <div className="justify-evenly text-3xl border-t-2 border-black pt-8 absolute bottom-20 lg:flex sm:hidden w-full">
+          <div>© 2024 ZekoLabs.</div>
+          <div>All Rights Reserved.</div>
+          <div>Terms of Service</div>
+          <div>Privacy Policy</div>
+        </div>
       </div>
       <div className="relative lg:flex sm:hidden">
         <div
@@ -139,7 +145,7 @@ export const AnnouncementSectionCard = () => {
           </div>
         </Carousal>
       </div>
-      <div className="cd:w-[400px] sm:w-full cd:px-0 sm:px-2 flex justify-between lg:hidden sm:flex mt-5 mb-20">
+      <div className="cd:w-[400px] sm:w-full cd:px-0 sm:px-2 flex justify-between lg:hidden sm:flex mt-5">
         <Button
           radius="full"
           className={`float-right ${cardPage === 0 ? "invisible" : ""}`}
@@ -161,12 +167,6 @@ export const AnnouncementSectionCard = () => {
           <Image src="/utils/next_btn.png" alt="back" width={30} height={30} />
         </Button>
       </div>
-      {/* <div className="flex justify-evenly z-0 text-3xl border-t-2 border-black pt-8 lg:block sm:hidden">
-        <div>© 2024 ZekoLabs.</div>
-        <div>All Rights Reserved.</div>
-        <div>Terms of Service</div>
-        <div>Privacy Policy</div>
-      </div> */}
     </div>
 
     // </div>
