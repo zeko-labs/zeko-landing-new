@@ -21,3 +21,7 @@
 .show {
   opacity: 1;
 }
+
+.videoscreen {
+  height: calc(100vh + 80px);
+}

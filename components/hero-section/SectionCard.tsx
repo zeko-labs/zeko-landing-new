@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 
 export const HeroSectionCard = () => {
   const [showCard, setShowCard] = useState(0);
@@ -21,96 +22,96 @@ export const HeroSectionCard = () => {
     <div className="w-full flex lg:flex-row sm:flex-col items-center lg:gap-20 sm:gap-10 justify-between p-20 lg:px-20 sm:px-10 pt-0">
       <div className="relative">
         <div className="relative">
-          <Image
-            className={`anime ${showCard > 0 ? "hide" : "show"}`}
-            src="/card/back.png"
-            alt=""
-            width={500}
-            height={500}
-          />
-          <Image
-            className={`absolute top-0 anime hide ${
-              showCard > 0 ? "show" : ""
-            }`}
-            src="/card/back-hover.png"
-            alt=""
-            width={500}
-            height={500}
-          />
+          <ScrollAnimation
+            animateOnce={true}
+            animateIn="hide"
+            initiallyVisible={true}
+            className="anime"
+          >
+            <Image src="/card/back.png" alt="" width={500} height={500} />
+          </ScrollAnimation>
+          <ScrollAnimation
+            animateOnce={true}
+            animateIn="show"
+            className="anime absolute top-0"
+          >
+            <Image src="/card/back-hover.png" alt="" width={500} height={500} />
+          </ScrollAnimation>
         </div>
-        <div
-          className={`absolute w-full card card-show anime hide ${
-            showCard > 0 ? "show" : ""
-          }`}
+        <ScrollAnimation
+          animateOnce={true}
+          animateIn="show"
+          className="anime absolute card card-show hide"
         >
           <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
-            <b>Zero-knowledge</b> is the technology of Trust, the
-            <br />
-            foundation for building our <b>future on blockchain</b>
+            <b>Zero-knowledge</b> is the technology of Trust, the foundation for
+            building our <b>future on blockchain</b>
           </div>
-        </div>
-      </div>
-      <div className="relative">
-        <div
-          className={`absolute w-full card card-show anime hide z-10 ${
-            showCard > 1 ? "show" : ""
-          }`}
-        >
-          <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
-            Zeko is <b>powerful zktechnology</b> for developers
-            <br />
-            scaling their apps to <b>reach their ambitions</b>
-          </div>
-        </div>
-        <div className="relative">
-          <Image
-            className={`anime ${showCard > 1 ? "hide" : "show"}`}
-            src="/card/back.png"
-            alt=""
-            width={500}
-            height={500}
-          />
-          <Image
-            className={`absolute top-0 anime hide ${
-              showCard > 1 ? "show" : ""
-            }`}
-            src="/card/back-hover.png"
-            alt=""
-            width={500}
-            height={500}
-          />
-        </div>
+        </ScrollAnimation>
       </div>
       <div className="relative">
         <div className="relative">
-          <Image
-            className={`anime ${showCard > 2 ? "hide" : "show"}`}
-            src="/card/back.png"
-            alt=""
-            width={500}
-            height={500}
-          />
-          <Image
-            className={`absolute top-0 anime hide ${
-              showCard > 2 ? "show" : ""
-            }`}
-            src="/card/back-hover.png"
-            alt=""
-            width={500}
-            height={500}
-          />
+          <ScrollAnimation
+            animateOnce={true}
+            animateIn="hide"
+            initiallyVisible={true}
+            className="anime"
+            delay={1000}
+          >
+            <Image src="/card/back.png" alt="" width={500} height={500} />
+          </ScrollAnimation>
+          <ScrollAnimation
+            animateOnce={true}
+            animateIn="show"
+            className="anime absolute top-0"
+            delay={1000}
+          >
+            <Image src="/card/back-hover.png" alt="" width={500} height={500} />
+          </ScrollAnimation>
         </div>
-        <div
-          className={`absolute w-full card card-show anime hide ${
-            showCard > 2 ? "show" : ""
-          }`}
+        <ScrollAnimation
+          animateOnce={true}
+          animateIn="show"
+          className="anime absolute card card-show hide"
+          delay={1000}
         >
           <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
-            Zeko <b>amplifies</b> the potential for good
-            <br />
-            In Zeko We <b>Trust</b>, We <b>Build</b>, We <b>Scale</b>
+            Zeko is <b>powerful zktechnology</b> for developers scaling their
+            apps to <b>reach their ambitions</b>
           </div>
+        </ScrollAnimation>
+      </div>
+      <div className="relative">
+        <div className="relative">
+          <ScrollAnimation
+            animateOnce={true}
+            animateIn="hide"
+            initiallyVisible={true}
+            className="anime"
+            delay={2000}
+          >
+            <Image src="/card/back.png" alt="" width={500} height={500} />
+          </ScrollAnimation>
+          <ScrollAnimation
+            animateOnce={true}
+            animateIn="show"
+            className="anime absolute top-0"
+            delay={2000}
+          >
+            <Image src="/card/back-hover.png" alt="" width={500} height={500} />
+          </ScrollAnimation>
         </div>
+        <ScrollAnimation
+          animateOnce={true}
+          animateIn="show"
+          className="anime absolute card card-show hide"
+          delay={2000}
+        >
+          <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
+            Zeko <b>amplifies</b> the potential for good In Zeko We <b>Trust</b>
+            , We <b>Build</b>, We <b>Scale</b>
+          </div>
+        </ScrollAnimation>
       </div>
     </div>
   );

@@ -40,7 +40,7 @@ export const AnnouncementSectionCard = () => {
           <source src="/background.webm" />
           Your browser does not support the video tag.
         </video>
-        <div className="justify-evenly text-3xl border-t-2 border-black pt-8 absolute bottom-24 lg:flex sm:hidden w-full">
+        <div className="justify-evenly text-sm border-t-1 border-black pt-4 absolute bottom-24 lg:flex sm:hidden w-full">
           <div>© 2024 ZekoLabs.</div>
           <div>All Rights Reserved.</div>
           <div>Terms of Service</div>
