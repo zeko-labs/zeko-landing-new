@@ -58,19 +58,13 @@
   display: block;
 }
 
-.pictureText {
-  position: absolute;
-  top: 0;
-  font-weight: bold;
-  color: white;
-  transition: 1s;
-  opacity: 1;
+.pictureTextCont {
+  position: relative;
 }
 
-.pictureTextCont {
-  display: inline-block;
-  width: auto;
-  position: relative;
+.pictureText {
+  font-weight: bold;
+  color: white;
 }
 
 .pictureText-2 {
@@ -79,20 +73,35 @@
   -webkit-background-clip: text;
   color: transparent;
   background-size: cover;
+}
+
+.page-break-back {
+  background: url("/section_backgrounds/page-break.svg");
+  background-size: cover;
+}
+
+.services-section {
+  background: url("/section_backgrounds/how-page.png");
+  background-size: cover;
+}
+
+.serviceCont {
+  position: absolute;
+  top: 0;
+  transition: 1s;
+  opacity: 1;
+}
+
+.serviceCont-2 {
   transition: 1s;
   opacity: 0;
 }
 
-.page-break-back {
-  background: url("/third-back.svg");
-  background-size: cover;
-}
-
-.imgCont:hover .pictureText {
+.imgCont:hover .serviceCont {
   opacity: 0;
 }
 
-.imgCont:hover .pictureText-2 {
+.imgCont:hover .serviceCont-2 {
   opacity: 1;
 }
 

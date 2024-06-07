@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { HeroSectionCard } from "./SectionCard";
 import { HeroSectionText } from "./SectionText";
+import { Button } from "@nextui-org/button";
 
 export const HeroSection = () => {
   return (
@@ -25,7 +26,10 @@ export const HeroSection = () => {
           className="lg:pl-20 sm:pl-0 z-10 lg:w-60 sm:w-28"
         />
         <HeroSectionText />
-        {/* <HeroSectionCard /> */}
+        <div className="lg:pl-20 sm:px-5 lg:pt-20 sm:py-10 z-10 flex lg:flex-row sm:flex-col gap-10">
+          <Button className="text-lg">Start Building</Button>
+          <Button className="text-lg">Try Testnet</Button>
+        </div>
       </div>
     </div>
   );

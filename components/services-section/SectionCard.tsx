@@ -35,13 +35,16 @@ export const ServicesSectionCard = (props: any) => {
           )}
         </b>
       </h1>
-      <div>
-        {textList[type].text}
-        <div className="pictureTextCont">
-          <p className="pictureText">{textList[type].goldText}&gt;&gt;</p>
-          <p className="pictureText-2">
+      <div className="pictureTextCont lg:w-[280px] sm:w-full">
+        <div className="whitespace-normal break-all serviceCont">
+          {textList[type].text}
+          <span className="pictureText">{textList[type].goldText}&gt;&gt;</span>
+        </div>
+        <div className="whitespace-normal break-all serviceCont-2">
+          {textList[type].text}
+          <span className="pictureText-2">
             {textList[type].goldText}&nbsp;&nbsp;&gt;&gt;
-          </p>
+          </span>
         </div>
       </div>
       <BtnCircle />

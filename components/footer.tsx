@@ -5,6 +5,7 @@ import {
   TelegramIcon,
   PaperIcon,
   GithubIcon,
+  DiscordIcon,
 } from "@/components/icons";
 import { useState, useCallback, useEffect } from "react";
 import { siteConfig } from "@/config/site";
@@ -36,18 +37,13 @@ export const Footer = () => {
 
   return (
     <footer
-      className={`w-full flex items-center justify-center md:justify-end gap-4 md:gap-8 p-4 md:p-8 fixed bottom-0 ${clsx(
-        "bg-opacity-100 backdrop-blur-sm",
-        {
-          "bg-transparent": isContentOver === false,
-          "bg-white": isContentOver === true,
-        }
-      )}`}
+      className={`w-full flex items-center justify-center md:justify-end gap-4 md:gap-8 p-4 md:p-8 fixed bottom-0 bg-transparent backdrop-blur-sm`}
     >
       <Link isExternal href={siteConfig.links.discord} aria-label="MVP">
-        <span className={`font-black text-3xl ${fontLexendBold.className}`}>
+        {/* <span className={`font-black text-3xl ${fontLexendBold.className}`}>
           MVP
-        </span>
+        </span> */}
+        <DiscordIcon className="text-default-900" size={28} />
       </Link>
       <Link isExternal href={siteConfig.links.docs} aria-label="Docs">
         <GithubIcon className="text-default-900" size={28} />
