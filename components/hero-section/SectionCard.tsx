@@ -56,6 +56,38 @@ export const HeroSectionCard = () => {
             animateIn="hide"
             initiallyVisible={true}
             className="anime"
+            delay={500}
+          >
+            <Image src="/card/back.png" alt="" width={500} height={500} />
+          </ScrollAnimation>
+          <ScrollAnimation
+            animateOnce={true}
+            animateIn="show"
+            className="anime absolute top-0"
+            delay={500}
+          >
+            <Image src="/card/back-hover.png" alt="" width={500} height={500} />
+          </ScrollAnimation>
+        </div>
+        <ScrollAnimation
+          animateOnce={true}
+          animateIn="show"
+          className="anime absolute card card-show hide"
+          delay={500}
+        >
+          <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
+            Zeko is <b>powerful zktechnology</b> for developers scaling their
+            apps to <b>reach their ambitions</b>
+          </div>
+        </ScrollAnimation>
+      </div>
+      <div className="relative">
+        <div className="relative">
+          <ScrollAnimation
+            animateOnce={true}
+            animateIn="hide"
+            initiallyVisible={true}
+            className="anime"
             delay={1000}
           >
             <Image src="/card/back.png" alt="" width={500} height={500} />
@@ -74,38 +106,6 @@ export const HeroSectionCard = () => {
           animateIn="show"
           className="anime absolute card card-show hide"
           delay={1000}
-        >
-          <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
-            Zeko is <b>powerful zktechnology</b> for developers scaling their
-            apps to <b>reach their ambitions</b>
-          </div>
-        </ScrollAnimation>
-      </div>
-      <div className="relative">
-        <div className="relative">
-          <ScrollAnimation
-            animateOnce={true}
-            animateIn="hide"
-            initiallyVisible={true}
-            className="anime"
-            delay={2000}
-          >
-            <Image src="/card/back.png" alt="" width={500} height={500} />
-          </ScrollAnimation>
-          <ScrollAnimation
-            animateOnce={true}
-            animateIn="show"
-            className="anime absolute top-0"
-            delay={2000}
-          >
-            <Image src="/card/back-hover.png" alt="" width={500} height={500} />
-          </ScrollAnimation>
-        </div>
-        <ScrollAnimation
-          animateOnce={true}
-          animateIn="show"
-          className="anime absolute card card-show hide"
-          delay={2000}
         >
           <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
             Zeko <b>amplifies</b> the potential for good In Zeko We <b>Trust</b>
