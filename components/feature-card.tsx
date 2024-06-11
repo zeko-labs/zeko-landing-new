@@ -29,7 +29,7 @@ export const FeatureCard = (props: any) => {
       }`}
     >
       <div className="lg:w-[340px] sm:w-full h-auto rounded-lg p-5 bg-opacity-50 bg-slate-100 z-20 flex flex-col justify-center">
-        <div className="goldenCardText">{goldenTextData[props.type].title}</div>
+        <div className="text-2xl">{goldenTextData[props.type].title}</div>
         <div className="">{goldenTextData[props.type].body}</div>
       </div>
     </div>

@@ -109,7 +109,7 @@ export const HeroSectionCard = () => {
           delay={2000}
         >
           <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
-            Zeko <b>amplifies</b> the potential for good, In Zeko We{" "}
+            Zeko <b>amplifies</b> the potential for good, in Zeko we{" "}
             <b>Trust</b>, We <b>Build</b>, We <b>Scale</b>
           </div>
         </ScrollAnimation>
