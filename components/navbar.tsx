@@ -145,9 +145,6 @@ export const Navbar = () => {
                     X
                   </Link>
                 </DropdownItem>
-                <DropdownItem key="brand" className=" w-full">
-                  Brand
-                </DropdownItem>
               </DropdownMenu>
             </Dropdown>
           </ButtonGroup>

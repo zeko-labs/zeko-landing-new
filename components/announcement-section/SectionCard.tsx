@@ -4,6 +4,7 @@ import { card } from "@/components/primitives";
 import Image from "next/image";
 
 import Carousal from "@itseasy21/react-elastic-carousel";
+import { Link } from "@nextui-org/link";
 
 interface CarouselRef {
   goTo: (index: number) => void;
@@ -41,10 +42,20 @@ export const AnnouncementSectionCard = () => {
           Your browser does not support the video tag.
         </video>
         <div className="justify-evenly text-sm border-t-1 border-black pt-4 absolute bottom-24 lg:flex sm:hidden w-full">
-          <div>© 2024 ZekoLabs.</div>
-          <div>All Rights Reserved.</div>
-          <div>Terms of Service</div>
-          <div>Privacy Policy</div>
+          <div className="flex justify-evenly w-full">
+            <div>© 2024 ZekoLabs.</div>
+            <div>All Rights Reserved.</div>
+          </div>
+          <div className="flex justify-evenly w-full">
+            {/* <div>Terms of Service</div> */}
+            <Link href="#" className="text-sm text-black">
+              Terms of Service
+            </Link>
+            <Link href="#" className="text-sm text-black">
+              Privacy Policy
+            </Link>
+            {/* <div>Privacy Policy</div> */}
+          </div>
         </div>
       </div>
       <div className="relative lg:flex sm:hidden">
