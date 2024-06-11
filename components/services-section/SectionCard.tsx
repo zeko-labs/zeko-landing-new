@@ -14,7 +14,7 @@ const textList = [
   },
   {
     title: "Expanding Blockchain Design",
-    text: "Placing zero-knowledge proof capabilities with easy implementation into the hands of developers is a game-changer for innovative blockchain applications which massively ",
+    text: "Placing zero-knowledge proof capabilities with easy implementation into the hands of developers is a game-changer for innovative blockchain applications which ",
     goldText: "massively expands the design space ",
   },
 ];
@@ -35,12 +35,12 @@ export const ServicesSectionCard = (props: any) => {
           )}
         </b>
       </h1>
-      <div className="pictureTextCont lg:w-[280px] sm:w-full">
-        <div className="whitespace-normal break-all serviceCont">
+      <div className="pictureTextCont lg:w-[350px] sm:w-full">
+        <div className="whitespace-normal serviceCont">
           {textList[type].text}
           <span className="pictureText">{textList[type].goldText}&gt;&gt;</span>
         </div>
-        <div className="whitespace-normal break-all serviceCont-2">
+        <div className="whitespace-normal serviceCont-2">
           {textList[type].text}
           <span className="pictureText-2">
             {textList[type].goldText}&nbsp;&nbsp;&gt;&gt;

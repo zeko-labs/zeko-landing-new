@@ -35,7 +35,7 @@ export const AnnouncementSectionCard = () => {
           autoPlay
           loop
           muted
-          className="w-screen lg:h-[900px] sm:h-[800px] object-cover"
+          className="w-screen lg:h-[900px] sm:h-[700px] object-cover"
         >
           <source src="/background.webm" />
           Your browser does not support the video tag.
@@ -93,6 +93,7 @@ export const AnnouncementSectionCard = () => {
       </div>
       <div className="lg:hidden sm:flex w-full">
         <Carousal
+          itemPadding={[0, 10, 0, 10]}
           isRTL={false}
           ref={carouselRef}
           showArrows={false}

@@ -1,0 +1,14 @@
+.pro-sol-back {
+  background-image: url("/utils/Circle.png"); /* Path to your left circle image */
+  background-size: cover;
+}
+
+.text h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.text p {
+  font-size: 1rem;
+  margin: 10px 0 0 0;
+}

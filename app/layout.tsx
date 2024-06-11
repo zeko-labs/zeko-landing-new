@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import "@/styles/cardAnimation.css";
 import "@/styles/animeProSol.css";
+import "@/styles/prosol.css";
 import { Metadata, Viewport } from "next";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
@@ -45,7 +46,6 @@ export default function RootLayout({
           <div className="flex flex-col bg-slate-50 relative">
             <Navbar />
             <main className="flex-grow">{children}</main>
-            <Footer />
           </div>
         </Providers>
       </body>

@@ -1,22 +1,23 @@
 import Image from "next/image";
 import { HeroSectionText } from "./SectionText";
 import { Button } from "@nextui-org/button";
+import { Footer } from "../footer";
 
 export const HeroSection = () => {
   return (
-    <div className="relative w-full h-screen">
-      <div className="w-full absolute top-0 z-0">
+    <div className="relative w-full lg:h-screen sm:h-full">
+      <div className="w-full h-[110%] absolute top-0 z-0">
         <video
           autoPlay
           loop
           muted
-          className="w-screen videoscreen object-cover -mt-20"
+          className="w-screen h-full object-cover -mt-20"
         >
           <source src="/background.webm" />
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="w-full h-full flex flex-col justify-between z-10 pt-10 pb-20 sm:items-center lg:items-start">
+      <div className="w-full lg:h-[90%] sm:h-full flex flex-col justify-between z-10 gap-16 sm:items-center lg:items-start">
         <Image
           src={"./logo.svg"}
           alt=""
@@ -29,6 +30,7 @@ export const HeroSection = () => {
           <Button className="text-lg">Start Building</Button>
           <Button className="text-lg">Try Testnet</Button>
         </div>
+        <Footer />
       </div>
     </div>
   );
