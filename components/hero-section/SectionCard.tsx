@@ -110,7 +110,7 @@ export const HeroSectionCard = () => {
         >
           <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
             Zeko <b>amplifies</b> the potential for good: in Zeko we{" "}
-            <b>Trust</b>, We <b>Build</b>, We <b>Scale</b>
+            <b>Trust</b>, we <b>Build</b>, we <b>Scale</b>
           </div>
         </ScrollAnimation>
       </div>
