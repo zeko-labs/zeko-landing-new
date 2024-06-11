@@ -30,7 +30,7 @@ export const HeroSection = () => {
           <Button className="text-lg">Start Building</Button>
           <Button className="text-lg">Try Testnet</Button>
         </div>
-        <Footer />
+        <Footer isOnLandingPage={true} />
       </div>
     </div>
   );
