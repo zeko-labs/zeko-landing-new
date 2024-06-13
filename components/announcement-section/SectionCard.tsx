@@ -69,9 +69,7 @@ export const AnnouncementSectionCard = () => {
         >
           <img src="./cardImg-1.svg" alt="" />
           <div>
-            <div className="text-2xl w-[300px]">
-              Zekoscan & Auro Wallet Intergrations
-            </div>
+            <div className="text-2xl">Zekoscan & Auro Wallet Intergrations</div>
             <div className="text-sm pt-1">
               Ready-made Explorer and Leading Wallet
             </div>
@@ -85,9 +83,7 @@ export const AnnouncementSectionCard = () => {
         >
           <img src="./cardImg-1.svg" alt="" />
           <div>
-            <div className="text-2xl w-[300px]">
-              Zekoscan & Auro Wallet Intergrations
-            </div>
+            <div className="text-2xl">Zekoscan & Auro Wallet Intergrations</div>
             <div className="text-sm pt-1">
               Ready-made Explorer and Leading Wallet
             </div>
