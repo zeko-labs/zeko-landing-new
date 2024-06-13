@@ -8,7 +8,7 @@ export const ServiceBtnTemplate = (props: any) => {
         return 0;
       case "Connection":
         return 1;
-      case "Repetition":
+      case "Scaling":
         return 2;
       case "Origin":
         return 3;

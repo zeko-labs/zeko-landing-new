@@ -8,7 +8,7 @@ const goldenTextData = [
     body: "From proof generation, recrusion, smart contract creation to decentralized storage solutions, Zeko offers everything developers need to realize the potential to bring your zkApp ideas to life.",
   },
   {
-    title: "Repetition",
+    title: "Scaling",
     body: "Through trustless zk-bridges, proofs that verify on Zeko can be consumed by the EVM, dramatically upending existing paradigms for blockchain applications.",
   },
   {

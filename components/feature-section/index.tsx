@@ -16,7 +16,7 @@ export const FeatureSection = () => {
             <ServiceBtnTemplate type="Connection" direct={0} />
           </div>
           <div className="absolute top-[300px] left-[190px]">
-            <ServiceBtnTemplate type="Repetition" direct={0} />
+            <ServiceBtnTemplate type="Scaling" direct={0} />
           </div>
           <div className="absolute top-[700px] left-[140px]">
             <ServiceBtnTemplate type="Legion" direct={0} />
@@ -40,7 +40,7 @@ export const FeatureSection = () => {
           />
         </div>
         <ServiceBtnTemplate type="Connection" />
-        <ServiceBtnTemplate type="Repetition" direct={1} />
+        <ServiceBtnTemplate type="Scaling" direct={1} />
         <ServiceBtnTemplate type="Legion" />
         <ServiceBtnTemplate type="Accessibility" direct={1} />
         <ServiceBtnTemplate type="Origin" />

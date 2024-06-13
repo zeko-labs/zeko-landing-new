@@ -35,7 +35,7 @@ export const ProblemSolutionSectionText = () => {
           </p>
         </ScrollAnimation>
       </div>
-      <div className="absolute right-[30%] lg:-mr-[400px] sm:-mr-[70vw] lg:w-[800px] sm:w-[140vw] bottom-[40%] lg:-mb-[400px] sm:-mb-[100vw] lg:h-[800px] sm:h-[140vw] pro-sol-back flex justify-center items-center object-cover">
+      <div className="absolute right-[30%] lg:-mr-[500px] sm:-mr-[80vw] lg:w-[1000px] sm:w-[160vw] bottom-[40%] lg:-mb-[500px] sm:-mb-[120vw] lg:h-[1000px] sm:h-[160vw] pro-sol-back flex justify-center items-center object-cover">
         <ScrollAnimation
           animateOnce={true}
           animateIn="pro-sol-text"

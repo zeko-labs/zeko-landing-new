@@ -104,7 +104,7 @@ export const Navbar = () => {
             </Dropdown>
             <Dropdown>
               <DropdownTrigger>
-                <Button className="border-r-2 border-gray-50 bg-slate-200 flex">
+                <Button className="bg-slate-200 flex">
                   Community
                   <Image
                     src="/utils/down_btn.png"

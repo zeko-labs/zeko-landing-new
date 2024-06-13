@@ -9,9 +9,7 @@ import {
 } from "@/components/icons";
 import { useState, useCallback, useEffect } from "react";
 import { siteConfig } from "@/config/site";
-import clsx from "clsx";
 import { Link } from "@nextui-org/link";
-import { fontLexendBold } from "@/config/fonts";
 
 export const Footer = (props: any) => {
   const { isOnLandingPage } = props;
