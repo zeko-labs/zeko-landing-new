@@ -26,9 +26,19 @@ export const HeroSection = () => {
           className="lg:pl-20 sm:pl-0 z-10 lg:w-60 sm:w-28"
         />
         <HeroSectionText />
-        <div className="lg:pl-20 sm:px-5 lg:pt-10 sm:py-10 z-10 flex lg:flex-row sm:flex-col gap-10">
-          <Button className="text-lg">Start Building</Button>
-          <Button className="text-lg">Try Testnet</Button>
+        <div className="w-full flex flex-col gap-10">
+          <div className="lg:pl-20 sm:px-5 z-10 flex lg:flex-row sm:flex-col gap-10">
+            <Button className="text-lg bg-[#ffe359]">Start Building</Button>
+            <Button className="text-lg bg-[#ffe359]">Try Testnet</Button>
+          </div>
+          <div className="lg:pl-20 sm:px-5  z-10 flex lg:flex-row sm:flex-col gap-10">
+            <Button className="text-lg bg-[#f2bb3e]">Start Building</Button>
+            <Button className="text-lg bg-[#f2bb3e]">Try Testnet</Button>
+          </div>
+          <div className="lg:pl-20 sm:px-5  z-10 flex lg:flex-row sm:flex-col gap-10">
+            <Button className="text-lg bg-[#a57328]">Start Building</Button>
+            <Button className="text-lg bg-[#a57328]">Try Testnet</Button>
+          </div>
         </div>
         <Footer isOnLandingPage={true} />
       </div>
