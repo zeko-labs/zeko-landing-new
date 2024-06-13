@@ -45,8 +45,8 @@ export const HeroSectionCard = () => {
           className="anime absolute card card-show hide"
         >
           <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
-            <b>Zero-knowledge</b> is the technology of <b>Trust</b>, the
-            foundation for building our <b>future on blockchain</b>
+            <b>Zero-knowledge</b> is the technology of Trust, the foundation for
+            building our <b>future on blockchain</b>
           </div>
         </ScrollAnimation>
       </div>
@@ -109,7 +109,7 @@ export const HeroSectionCard = () => {
           delay={2000}
         >
           <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
-            Zeko <b>amplifies</b> the potential of all zkApps for greater good:
+            Zeko <b>amplifies</b> the potential of all zkApps for greater good;
             in Zeko we <b>Trust</b>, we <b>Build</b>, we <b>Scale</b>
           </div>
         </ScrollAnimation>

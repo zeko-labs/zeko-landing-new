@@ -38,12 +38,9 @@ export const Footer = (props: any) => {
     <footer
       className={`w-full flex items-center justify-center ${
         isOnLandingPage ? "md:justify-end" : ""
-      } gap-4 md:gap-8 p-4 md:p-8 bg-transparent backdrop-blur-sm`}
+      } gap-4 md:gap-8 p-2 md:p-4 bg-transparent backdrop-blur-sm`}
     >
       <Link isExternal href={siteConfig.links.discord} aria-label="MVP">
-        {/* <span className={`font-black text-3xl ${fontLexendBold.className}`}>
-          MVP
-        </span> */}
         <DiscordIcon className="text-default-900" size={28} />
       </Link>
       <Link isExternal href={siteConfig.links.docs} aria-label="Docs">
