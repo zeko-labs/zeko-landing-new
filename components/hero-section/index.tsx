@@ -28,8 +28,8 @@ export const HeroSection = () => {
         <HeroSectionText />
         <div className="w-full flex flex-col gap-10">
           <div className="lg:pl-20 sm:px-5 z-10 flex lg:flex-row sm:flex-col gap-10">
-            <div className={`text-lg heroBtn`}>Start Building</div>
-            <div className={`text-lg heroBtn`}>Try Testnet</div>
+            <div className={`heroBtn`}>Start Building</div>
+            <div className={`heroBtn`}>Try Testnet</div>
           </div>
         </div>
         <Footer isOnLandingPage={true} />
