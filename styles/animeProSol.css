@@ -33,3 +33,20 @@
 .pro-sol-invisible {
   opacity: 0;
 }
+
+.heroBtn {
+  background-color: #f2bb3e;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.heroBtn:hover {
+  background-color: #ffe359;
+}
+
+.heroBtn:active {
+  background-color: #a57328;
+}

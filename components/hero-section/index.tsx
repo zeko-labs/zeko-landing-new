@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { HeroSectionText } from "./SectionText";
-import { Button } from "@nextui-org/button";
 import { Footer } from "../footer";
+import { fontLexend, fontLexendBold, fontLexendLight } from "@/config/fonts";
 
 export const HeroSection = () => {
   return (
@@ -28,16 +28,12 @@ export const HeroSection = () => {
         <HeroSectionText />
         <div className="w-full flex flex-col gap-10">
           <div className="lg:pl-20 sm:px-5 z-10 flex lg:flex-row sm:flex-col gap-10">
-            <Button className="text-lg bg-[#ffe359]">Start Building</Button>
-            <Button className="text-lg bg-[#ffe359]">Try Testnet</Button>
-          </div>
-          <div className="lg:pl-20 sm:px-5  z-10 flex lg:flex-row sm:flex-col gap-10">
-            <Button className="text-lg bg-[#f2bb3e]">Start Building</Button>
-            <Button className="text-lg bg-[#f2bb3e]">Try Testnet</Button>
-          </div>
-          <div className="lg:pl-20 sm:px-5  z-10 flex lg:flex-row sm:flex-col gap-10">
-            <Button className="text-lg bg-[#a57328]">Start Building</Button>
-            <Button className="text-lg bg-[#a57328]">Try Testnet</Button>
+            <div className={`text-lg heroBtn ${fontLexendLight.className}`}>
+              Start Building
+            </div>
+            <div className={`text-lg heroBtn ${fontLexendLight.className} `}>
+              Try Testnet
+            </div>
           </div>
         </div>
         <Footer isOnLandingPage={true} />
