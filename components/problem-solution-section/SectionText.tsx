@@ -29,9 +29,9 @@ export const ProblemSolutionSectionText = () => {
           animateIn="pro-sol-text"
           className="pro-sol-invisible w-[300px] text-white lg:pl-0 sm:pl-20"
         >
-          <h1 className="lg:text-4xl sm:text-2xl">Problem</h1>
-          <p>
-            We live in a world of expanding technology and rapidly eroding trust
+          {/* <h1 className="lg:text-4xl sm:text-2xl">Problem</h1> */}
+          <p className="text-xl">
+            We live in a world of rapidly expanding technology and eroding trust
           </p>
         </ScrollAnimation>
       </div>
@@ -42,10 +42,10 @@ export const ProblemSolutionSectionText = () => {
           className="pro-sol-invisible w-[300px] text-white lg:pr-0 sm:pr-20"
           delay={800}
         >
-          <h1 className="lg:text-4xl sm:text-2xl">Solution</h1>
-          <p>
-            Zeko&apos;s simple zk rollup architecture seamlessly embeds trust
-            into every digital interaction
+          {/* <h1 className="lg:text-4xl sm:text-2xl">Solution</h1> */}
+          <p className="text-xl">
+            Zeko&apos;s scalable zk rollup architecture embeds trust into every
+            digital interaction
           </p>
         </ScrollAnimation>
       </div>
