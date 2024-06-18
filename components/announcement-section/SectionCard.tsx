@@ -8,10 +8,6 @@ import { Link } from "@nextui-org/link";
 import { Footer } from "../footer";
 import ScrollAnimation from "react-animate-on-scroll";
 
-interface CarouselRef {
-  goTo: (index: number) => void;
-}
-
 export const AnnouncementSectionCard = () => {
   const [cardPage, setCardPage] = useState(0);
   const carouselRef = useRef(null);
@@ -32,7 +28,7 @@ export const AnnouncementSectionCard = () => {
 
   return (
     // <div className="flex flex-col mb-40">
-    <div className="flex sm:flex-col lg:flex-row justify-between lg:gap-10 w-full top-0 lg:p-24 sm:p-5 cardImgBack items-center">
+    <div className="flex sm:flex-col lg:flex-row justify-between lg:gap-10 w-full top-0 lg:p-28 lg:pt-32 sm:p-5 cardImgBack items-center">
       <div className="w-full h-[800px] absolute top-0 z-0 left-0 overflow-hidden">
         <video
           autoPlay
@@ -43,6 +39,9 @@ export const AnnouncementSectionCard = () => {
           <source src="/background.webm" />
           Your browser does not support the video tag.
         </video>
+        <div className="w-full text-center top-8 absolute text-4xl">
+          What&apos;s New
+        </div>
         <div className="justify-evenly text-sm border-t-1 border-black absolute bottom-0 lg:flex sm:hidden w-full">
           <div className="flex justify-evenly w-full items-center">
             <div>© 2024 ZekoLabs.</div>
@@ -65,11 +64,11 @@ export const AnnouncementSectionCard = () => {
           initiallyVisible={true}
           animateIn="hide"
           delay={0}
-          className="flex flex-col gap-5 justify-between rounded-2xl anime announceCard-1"
+          className="flex flex-col gap-5 justify-between rounded-2xl anime announceCard-1 p-5"
         >
           <img src="./cardImg-1.svg" alt="" />
-          <div>
-            <div className="text-2xl">Zekoscan & Auro Wallet Intergrations</div>
+          <div className="text-center">
+            <div className="text-xl">Zekoscan & Auro Wallet Intergrations</div>
             <div className="text-sm pt-1">
               Ready-made Explorer and Leading Wallet
             </div>
@@ -79,10 +78,10 @@ export const AnnouncementSectionCard = () => {
           animateOnce={true}
           animateIn="show"
           delay={0}
-          className="absolute top-0 flex flex-col gap-5 justify-between rounded-2xl anime announceCard-2 hide"
+          className="absolute top-0 flex flex-col gap-5 justify-between rounded-2xl anime announceCard-2 hide p-5"
         >
           <img src="./cardImg-1.svg" alt="" />
-          <div>
+          <div className="text-center">
             <div className="text-2xl">Zekoscan & Auro Wallet Intergrations</div>
             <div className="text-sm pt-1">
               Ready-made Explorer and Leading Wallet
@@ -96,10 +95,10 @@ export const AnnouncementSectionCard = () => {
           initiallyVisible={true}
           animateIn="hide"
           delay={1000}
-          className="flex flex-col gap-5 justify-between rounded-2xl anime announceCard-1"
+          className="flex flex-col gap-5 justify-between rounded-2xl anime announceCard-1 p-5"
         >
           <img src="./cardImg-2.svg" alt="" />
-          <div>
+          <div className="text-center">
             <div className="text-2xl">Meet the Core Team</div>
             <div className="text-sm pt-1">
               ZekoLabs Expands for a Resounding Experience
@@ -110,10 +109,10 @@ export const AnnouncementSectionCard = () => {
           animateOnce={true}
           animateIn="show"
           delay={1000}
-          className="absolute top-0 flex flex-col gap-5 justify-between rounded-2xl anime announceCard-2 hide"
+          className="absolute top-0 flex flex-col gap-5 justify-between rounded-2xl anime announceCard-2 hide p-5"
         >
           <img src="./cardImg-2.svg" alt="" />
-          <div>
+          <div className="text-center">
             <div className="text-2xl">Meet the Core Team</div>
             <div className="text-sm pt-1">
               ZekoLabs Expands for a Resounding Experience
@@ -127,10 +126,10 @@ export const AnnouncementSectionCard = () => {
           initiallyVisible={true}
           animateIn="hide"
           delay={2000}
-          className="flex flex-col gap-5 justify-between rounded-2xl anime announceCard-1"
+          className="flex flex-col gap-5 justify-between rounded-2xl anime announceCard-1 p-5"
         >
           <img src="./cardImg-3.svg" alt="" />
-          <div>
+          <div className="text-center">
             <div className="text-2xl">Compatiable with o1js</div>
             <div className="text-sm pt-1">
               Feature-rich SDK for zk community
@@ -141,10 +140,10 @@ export const AnnouncementSectionCard = () => {
           animateOnce={true}
           animateIn="show"
           delay={2000}
-          className="absolute top-0 flex flex-col gap-5 justify-between rounded-2xl anime announceCard-2 hide"
+          className="absolute top-0 flex flex-col gap-5 justify-between rounded-2xl anime announceCard-2 hide p-5"
         >
           <img src="./cardImg-3.svg" alt="" />
-          <div>
+          <div className="text-center">
             <div className="text-2xl">Compatiable with o1js</div>
             <div className="text-sm pt-1">
               Feature-rich SDK for zk community
@@ -162,7 +161,7 @@ export const AnnouncementSectionCard = () => {
         >
           <div className="flex flex-col justify-between">
             <div className="relative">
-              <div className="flex flex-col gap-5 justify-between rounded-2xl announceCard-2">
+              <div className="flex flex-col gap-5 justify-between rounded-2xl announceCard-2 p-5">
                 <img src="./cardImg-1.svg" alt="" />
                 <div>
                   <div className="lg:text-2xl sm:text-xl">
@@ -177,7 +176,7 @@ export const AnnouncementSectionCard = () => {
           </div>
           <div className="flex flex-col justify-between">
             <div className="relative">
-              <div className="flex flex-col gap-5 justify-between rounded-2xl announceCard-2">
+              <div className="flex flex-col gap-5 justify-between rounded-2xl announceCard-2 p-5">
                 <img src="./cardImg-2.svg" alt="" />
                 <div>
                   <div className="text-2xl">Meet the Core Team</div>
@@ -190,7 +189,7 @@ export const AnnouncementSectionCard = () => {
           </div>
           <div className="flex flex-col justify-between">
             <div className="relative ">
-              <div className="flex flex-col gap-5 justify-between rounded-2xl announceCard-2">
+              <div className="flex flex-col gap-5 justify-between rounded-2xl announceCard-2 p-5">
                 <img src="./cardImg-3.svg" alt="" />
                 <div>
                   <div className="text-2xl">Compatiable with o1js</div>
@@ -226,7 +225,5 @@ export const AnnouncementSectionCard = () => {
         </Button>
       </div>
     </div>
-
-    // </div>
   );
 };

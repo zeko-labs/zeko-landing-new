@@ -2,6 +2,7 @@ import Image from "next/image";
 import { HeroSectionText } from "./SectionText";
 import { Footer } from "../footer";
 import { fontLexend, fontLexendBold, fontLexendLight } from "@/config/fonts";
+import { Link } from "@nextui-org/link";
 
 export const HeroSection = () => {
   return (
@@ -28,8 +29,16 @@ export const HeroSection = () => {
         <HeroSectionText />
         <div className="w-full flex flex-col gap-10">
           <div className="lg:pl-20 sm:px-5 z-10 flex lg:flex-row sm:flex-col gap-10">
-            <div className={`heroBtn`}>Start Building</div>
-            <div className={`heroBtn`}>Try Testnet</div>
+            <Link className="text-black" href="https://docs.zeko.io" isExternal>
+              <div className={`heroBtn`}>
+                <b>Start Building</b>
+              </div>
+            </Link>
+            <Link className="text-black" href="/faucet" isExternal>
+              <div className={`heroBtn`}>
+                <b>Try Testnet</b>
+              </div>
+            </Link>
           </div>
         </div>
         <Footer isOnLandingPage={true} />

@@ -19,7 +19,7 @@ export const HeroSectionCard = () => {
     }
   }, [showCard]);
   return (
-    <div className="w-full flex lg:flex-row sm:flex-col items-center lg:gap-20 sm:gap-10 justify-evenly lg:p-20 sm:p-12 max-w-[1600px]">
+    <div className="w-full flex lg:flex-row sm:flex-col items-center lg:gap-10 sm:gap-10 justify-evenly lg:p-16 sm:p-12">
       {/* <div className="container flex lg:flex-row gap-10 sm:flex-col items-center justify-evenly"> */}
       <div className="relative">
         <div className="relative">
@@ -34,7 +34,7 @@ export const HeroSectionCard = () => {
           <ScrollAnimation
             animateOnce={true}
             animateIn="show"
-            className="anime absolute top-0"
+            className="anime absolute top-0 "
           >
             <Image src="/card/back-hover.png" alt="" width={500} height={500} />
           </ScrollAnimation>
@@ -44,9 +44,11 @@ export const HeroSectionCard = () => {
           animateIn="show"
           className="anime absolute card card-show hide"
         >
-          <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
-            <b>Zero-knowledge</b> is the technology of Trust, the foundation for
-            building our <b>future on blockchain</b>
+          <div className="h-full w-full flex justify-center items-center">
+            <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
+              <b>Zero-knowledge</b> is the technology of Trust, the foundation
+              for building our <b>future on blockchain</b>
+            </div>
           </div>
         </ScrollAnimation>
       </div>
@@ -76,9 +78,11 @@ export const HeroSectionCard = () => {
           className="anime absolute card card-show hide"
           delay={1000}
         >
-          <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
-            Zeko is <b>powerful zktechnology</b> for developers scaling their
-            apps to <b>reach their ambitions</b>
+          <div className="h-full w-full flex justify-center items-center">
+            <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
+              Zeko is a <b>powerful protocol</b> for developers scaling their
+              apps to <b>new markets</b>
+            </div>
           </div>
         </ScrollAnimation>
       </div>
@@ -108,9 +112,11 @@ export const HeroSectionCard = () => {
           className="anime absolute card card-show hide"
           delay={2000}
         >
-          <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
-            Zeko <b>amplifies</b> the positive potential of all zkApps; in Zeko
-            we <b>Trust</b>, we <b>Build</b>, we <b>Scale</b>
+          <div className="h-full w-full flex justify-center items-center">
+            <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
+              Zeko <b>amplifies</b> the positive potential of all zkApps; in
+              Zeko we <b>Trust</b>, we <b>Build</b>, we <b>Scale</b>
+            </div>
           </div>
         </ScrollAnimation>
       </div>

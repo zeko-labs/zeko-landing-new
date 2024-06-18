@@ -5,7 +5,7 @@ const goldenTextData = [
   },
   {
     title: "Connection",
-    body: "From proof generation, recrusion, smart contract creation to decentralized storage solutions, Zeko offers everything developers need to realize the potential to bring your zkApp ideas to life.",
+    body: "From proof generation, recursion, smart contract creation to decentralized storage solutions, Zeko offers everything developers need to realize the potential to bring your zkApp ideas to life.",
   },
   {
     title: "Scaling",

@@ -27,11 +27,14 @@ export const ProblemSolutionSectionText = () => {
         <ScrollAnimation
           animateOnce={true}
           animateIn="pro-sol-text"
-          className="pro-sol-invisible w-[300px] text-white lg:pl-0 sm:pl-20"
+          className="pro-sol-invisible w-[350px] text-white lg:pl-0 sm:pl-20 lg:pt-0 sm:pt-20 text-center"
         >
           {/* <h1 className="lg:text-4xl sm:text-2xl">Problem</h1> */}
-          <p className="text-xl">
-            We live in a world of rapidly expanding technology and eroding trust
+          <p className="lg:text-2xl sm:text-lg">
+            <b>
+              We live in a world of rapidly expanding technology and eroding
+              trust
+            </b>
           </p>
         </ScrollAnimation>
       </div>
@@ -39,13 +42,15 @@ export const ProblemSolutionSectionText = () => {
         <ScrollAnimation
           animateOnce={true}
           animateIn="pro-sol-text"
-          className="pro-sol-invisible w-[300px] text-white lg:pr-0 sm:pr-20"
+          className="pro-sol-invisible w-[350px] text-white lg:pr-0 sm:pr-20 lg:pb-0 sm:pb-20 text-center"
           delay={800}
         >
           {/* <h1 className="lg:text-4xl sm:text-2xl">Solution</h1> */}
-          <p className="text-xl">
-            Zeko&apos;s scalable zk rollup architecture embeds trust into every
-            digital interaction
+          <p className="text-2xl">
+            <b>
+              Zeko&apos;s scalable zk rollup architecture embeds trust into
+              every digital interaction
+            </b>
           </p>
         </ScrollAnimation>
       </div>

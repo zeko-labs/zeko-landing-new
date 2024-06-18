@@ -3,7 +3,9 @@
 }
 
 .card-show {
-  bottom: calc(50% - 35px);
+  /* bottom: calc(50% - 35px); */
+  bottom: 0;
+  height: 100%;
 }
 
 .card-show-2 {
@@ -31,7 +33,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
-  padding: 20px;
 }
 
 .announceCard-2 {
@@ -39,5 +40,4 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
-  padding: 20px;
 }

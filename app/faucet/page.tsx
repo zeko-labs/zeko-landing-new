@@ -86,6 +86,12 @@ export default function DocsPage() {
           tMINA cannot be sold and is not redeemable for any cryptocurrency or
           digital asset.
         </h2>
+        <h2 className={subtitle({ noMargin: true })}>
+          For help with installing and setting up a wallet, visit:{" "}
+          <Link href="https://docs.zeko.io/for_end_users" isExternal>
+            https://docs.zeko.io/for_end_users
+          </Link>
+        </h2>
       </div>
 
       <NetworkSelector />

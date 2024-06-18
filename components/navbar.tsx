@@ -80,13 +80,13 @@ export const Navbar = () => {
                     className="text-black w-full"
                     aria-label="transfer"
                   >
-                    Zeko Transfer
+                    Zeko Send
                   </Link>
                 </DropdownItem>
                 <DropdownItem key="docs">
                   <Link
                     isExternal
-                    href="https://docsend.com/view/f9a6kgdr4tjwuqng"
+                    href="https://docs.zeko.io"
                     className="text-black w-full"
                     aria-label="docs"
                   >
@@ -135,7 +135,7 @@ export const Navbar = () => {
                     className="text-black w-full"
                     aria-label="twitter"
                   >
-                    X
+                    X (Twitter)
                   </Link>
                 </DropdownItem>
               </DropdownMenu>
