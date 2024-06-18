@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { Image } from "@nextui-org/react";
 import { useState, useEffect } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -29,14 +29,26 @@ export const HeroSectionCard = () => {
             initiallyVisible={true}
             className="anime"
           >
-            <Image src="/card/back.png" alt="" width={500} height={500} />
+            <Image
+              src="/card/back-hover-2.png"
+              alt=""
+              width={500}
+              height={500}
+              radius="lg"
+            />
           </ScrollAnimation>
           <ScrollAnimation
             animateOnce={true}
             animateIn="show"
             className="anime absolute top-0 "
           >
-            <Image src="/card/back-hover.png" alt="" width={500} height={500} />
+            <Image
+              src="/card/back-hover.png"
+              alt=""
+              width={500}
+              height={500}
+              radius="lg"
+            />
           </ScrollAnimation>
         </div>
         <ScrollAnimation
@@ -45,7 +57,7 @@ export const HeroSectionCard = () => {
           className="anime absolute card card-show hide"
         >
           <div className="h-full w-full flex justify-center items-center">
-            <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
+            <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm z-10">
               <b>Zero-knowledge</b> is the technology of Trust, the foundation
               for building our <b>future on blockchain</b>
             </div>
@@ -61,7 +73,13 @@ export const HeroSectionCard = () => {
             className="anime"
             delay={1000}
           >
-            <Image src="/card/back.png" alt="" width={500} height={500} />
+            <Image
+              src="/card/back-hover-2.png"
+              alt=""
+              width={500}
+              height={500}
+              radius="lg"
+            />
           </ScrollAnimation>
           <ScrollAnimation
             animateOnce={true}
@@ -69,7 +87,13 @@ export const HeroSectionCard = () => {
             className="anime absolute top-0"
             delay={1000}
           >
-            <Image src="/card/back-hover.png" alt="" width={500} height={500} />
+            <Image
+              src="/card/back-hover.png"
+              alt=""
+              width={500}
+              height={500}
+              radius="lg"
+            />
           </ScrollAnimation>
         </div>
         <ScrollAnimation
@@ -79,7 +103,7 @@ export const HeroSectionCard = () => {
           delay={1000}
         >
           <div className="h-full w-full flex justify-center items-center">
-            <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
+            <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm z-10">
               Zeko is a <b>powerful protocol</b> for developers scaling their
               apps to <b>new markets</b>
             </div>
@@ -95,7 +119,13 @@ export const HeroSectionCard = () => {
             className="anime"
             delay={2000}
           >
-            <Image src="/card/back.png" alt="" width={500} height={500} />
+            <Image
+              src="/card/back-hover-2.png"
+              alt=""
+              width={500}
+              height={500}
+              radius="lg"
+            />
           </ScrollAnimation>
           <ScrollAnimation
             animateOnce={true}
@@ -103,7 +133,13 @@ export const HeroSectionCard = () => {
             className="anime absolute top-0"
             delay={2000}
           >
-            <Image src="/card/back-hover.png" alt="" width={500} height={500} />
+            <Image
+              src="/card/back-hover.png"
+              alt=""
+              width={500}
+              height={500}
+              radius="lg"
+            />
           </ScrollAnimation>
         </div>
         <ScrollAnimation
@@ -113,7 +149,7 @@ export const HeroSectionCard = () => {
           delay={2000}
         >
           <div className="h-full w-full flex justify-center items-center">
-            <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm">
+            <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm z-10">
               Zeko <b>amplifies</b> the positive potential of all zkApps; in
               Zeko we <b>Trust</b>, we <b>Build</b>, we <b>Scale</b>
             </div>
