@@ -5,26 +5,26 @@ export const FeatureSection = () => {
   return (
     <>
       <div className="w-full lg:flex sm:hidden justify-center bg-[#E0E9FD]">
-        <div className="py-36 px-28 relative">
+        <div className="relative">
           <Image
-            src="/utils/back-form.png"
+            src="/utils/What.bckgd.png"
             alt="back"
-            width={800}
-            height={800}
+            width={1100}
+            height={1100}
           />
-          <div className="absolute top-[110px] left-[470px]">
+          <div className="absolute top-[150px] left-[500px]">
             <ServiceBtnTemplate type="Connection" direct={0} />
           </div>
-          <div className="absolute top-[300px] left-[210px]">
+          <div className="absolute top-[300px] left-[280px]">
             <ServiceBtnTemplate type="Legion" direct={0} />
           </div>
-          <div className="absolute top-[700px] left-[120px]">
+          <div className="absolute top-[660px] left-[180px]">
             <ServiceBtnTemplate type="Scaling" direct={0} />
           </div>
-          <div className="absolute top-[900px] left-[460px]">
+          <div className="absolute top-[870px] left-[480px]">
             <ServiceBtnTemplate type="Accessibility" direct={0} />
           </div>
-          <div className="absolute top-[470px] left-[740px]">
+          <div className="absolute top-[470px] left-[750px]">
             <ServiceBtnTemplate type="Origin" direct={0} />
           </div>
         </div>
