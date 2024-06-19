@@ -70,7 +70,7 @@ export const Navbar = () => {
                     className="text-black w-full"
                     aria-label="faucet"
                   >
-                    Zeko Faucet
+                    Faucet
                   </Link>
                 </DropdownItem>
                 <DropdownItem key="transfer">
@@ -80,7 +80,7 @@ export const Navbar = () => {
                     className="text-black w-full"
                     aria-label="transfer"
                   >
-                    Zeko Send
+                    Send
                   </Link>
                 </DropdownItem>
                 <DropdownItem key="docs">
@@ -90,7 +90,7 @@ export const Navbar = () => {
                     className="text-black w-full"
                     aria-label="docs"
                   >
-                    Zeko Docs
+                    Docs
                   </Link>
                 </DropdownItem>
               </DropdownMenu>

@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { Button } from "@nextui-org/button";
 import { card } from "@/components/primitives";
-import Image from "next/image";
+import { Image } from "@nextui-org/react";
 
 import Carousal from "@itseasy21/react-elastic-carousel";
 import { Link } from "@nextui-org/link";
@@ -58,100 +58,121 @@ export const AnnouncementSectionCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative lg:flex sm:hidden">
-        <ScrollAnimation
-          animateOnce={true}
-          initiallyVisible={true}
-          animateIn="hide"
-          delay={0}
-          className="flex flex-col gap-5 justify-between rounded-2xl anime announceCard-1 p-5"
-        >
-          <img src="./cardImg-1.svg" alt="" />
-          <div className="text-center">
-            <div className="text-xl">Zekoscan & Auro Wallet Intergrations</div>
-            <div className="text-sm pt-1">
-              Ready-made Explorer and Leading Wallet
+      <Link
+        href="https://x.com/ZekoLabs/status/1787541750917255241"
+        isExternal
+        className="text-black"
+      >
+        <div className="relative lg:flex sm:hidden">
+          <ScrollAnimation
+            animateOnce={true}
+            initiallyVisible={true}
+            animateIn="hide"
+            delay={0}
+            className="flex flex-col gap-5 justify-between rounded-2xl anime announceCard-1 p-5"
+          >
+            {/* <img src="./card/image-1.jpg" alt="" /> */}
+            <Image src="./card/image-1.jpg" alt="" width={300} height={300} />
+            <div className="text-center">
+              <div className="text-xl">Zekoscan & Auro Wallet</div>
+              <div className="text-sm pt-1">
+                Ready-made Explorer and Leading Wallet
+              </div>
             </div>
-          </div>
-        </ScrollAnimation>
-        <ScrollAnimation
-          animateOnce={true}
-          animateIn="show"
-          delay={0}
-          className="absolute top-0 flex flex-col gap-5 justify-between rounded-2xl anime announceCard-2 hide p-5"
-        >
-          <img src="./cardImg-1.svg" alt="" />
-          <div className="text-center">
-            <div className="text-2xl">Zekoscan & Auro Wallet Intergrations</div>
-            <div className="text-sm pt-1">
-              Ready-made Explorer and Leading Wallet
+          </ScrollAnimation>
+          <ScrollAnimation
+            animateOnce={true}
+            animateIn="show"
+            delay={0}
+            className="absolute top-0 flex flex-col gap-5 justify-between rounded-2xl anime announceCard-2 hide p-5"
+          >
+            {/* <img src="./card/image-1.jpg" alt="" /> */}
+            <Image src="./card/image-1.jpg" alt="" width={300} height={300} />
+            <div className="text-center">
+              <div className="text-2xl">Zekoscan & Auro Wallet</div>
+              <div className="text-sm pt-1">
+                Ready-made Explorer and Leading Wallet
+              </div>
             </div>
-          </div>
-        </ScrollAnimation>
-      </div>
-      <div className="relative lg:flex sm:hidden">
-        <ScrollAnimation
-          animateOnce={true}
-          initiallyVisible={true}
-          animateIn="hide"
-          delay={1000}
-          className="flex flex-col gap-5 justify-between rounded-2xl anime announceCard-1 p-5"
-        >
-          <img src="./cardImg-2.svg" alt="" />
-          <div className="text-center">
-            <div className="text-2xl">Meet the Core Team</div>
-            <div className="text-sm pt-1">
-              ZekoLabs Expands for a Resounding Experience
+          </ScrollAnimation>
+        </div>
+      </Link>
+
+      <Link
+        href="https://x.com/ZekoLabs/status/1785724030861127849"
+        isExternal
+        className="text-black"
+      >
+        <div className="relative lg:flex sm:hidden">
+          <ScrollAnimation
+            animateOnce={true}
+            initiallyVisible={true}
+            animateIn="hide"
+            delay={1000}
+            className="flex flex-col gap-5 justify-between rounded-2xl anime announceCard-1 p-5"
+          >
+            {/* <img src="./card/image-2.png" alt="" /> */}
+            <Image src="./card/image-2.png" alt="" width={300} height={300} />
+            <div className="text-center">
+              <div className="text-2xl">Meet the Core Team</div>
+              <div className="text-sm pt-1">
+                ZekoLabs Expands for a Resounding Experience
+              </div>
             </div>
-          </div>
-        </ScrollAnimation>
-        <ScrollAnimation
-          animateOnce={true}
-          animateIn="show"
-          delay={1000}
-          className="absolute top-0 flex flex-col gap-5 justify-between rounded-2xl anime announceCard-2 hide p-5"
-        >
-          <img src="./cardImg-2.svg" alt="" />
-          <div className="text-center">
-            <div className="text-2xl">Meet the Core Team</div>
-            <div className="text-sm pt-1">
-              ZekoLabs Expands for a Resounding Experience
+          </ScrollAnimation>
+          <ScrollAnimation
+            animateOnce={true}
+            animateIn="show"
+            delay={1000}
+            className="absolute top-0 flex flex-col gap-5 justify-between rounded-2xl anime announceCard-2 hide p-5"
+          >
+            {/* <img src="./card/image-2.png" alt="" /> */}
+            <Image src="./card/image-2.png" alt="" width={300} height={300} />
+            <div className="text-center">
+              <div className="text-2xl">Meet the Core Team</div>
+              <div className="text-sm pt-1">
+                ZekoLabs Expands for a Resounding Experience
+              </div>
             </div>
-          </div>
-        </ScrollAnimation>
-      </div>
-      <div className="relative lg:flex sm:hidden">
-        <ScrollAnimation
-          animateOnce={true}
-          initiallyVisible={true}
-          animateIn="hide"
-          delay={2000}
-          className="flex flex-col gap-5 justify-between rounded-2xl anime announceCard-1 p-5"
-        >
-          <img src="./cardImg-3.svg" alt="" />
-          <div className="text-center">
-            <div className="text-2xl">Compatiable with o1js</div>
-            <div className="text-sm pt-1">
-              Feature-rich SDK for zk community
+          </ScrollAnimation>
+        </div>
+      </Link>
+      <Link
+        href="https://medium.com/zekoprotocol/zeko-labs-announces-3-million-in-funding-to-propel-development-of-zeko-protocol-e3d2c45bea3e"
+        isExternal
+        className="text-black"
+      >
+        <div className="relative lg:flex sm:hidden">
+          <ScrollAnimation
+            animateOnce={true}
+            initiallyVisible={true}
+            animateIn="hide"
+            delay={2000}
+            className="flex flex-col gap-5 justify-between rounded-2xl anime announceCard-1 p-5"
+          >
+            {/* <img src="./card/image-3.jpg" alt="" /> */}
+            <Image src="./card/image-3.jpg" alt="" width={300} height={300} />
+            <div className="text-center">
+              <div className="text-2xl">Successful Fundraise</div>
+              <div className="text-sm pt-1">A milestone for Zeko Protocol</div>
             </div>
-          </div>
-        </ScrollAnimation>
-        <ScrollAnimation
-          animateOnce={true}
-          animateIn="show"
-          delay={2000}
-          className="absolute top-0 flex flex-col gap-5 justify-between rounded-2xl anime announceCard-2 hide p-5"
-        >
-          <img src="./cardImg-3.svg" alt="" />
-          <div className="text-center">
-            <div className="text-2xl">Compatiable with o1js</div>
-            <div className="text-sm pt-1">
-              Feature-rich SDK for zk community
+          </ScrollAnimation>
+          <ScrollAnimation
+            animateOnce={true}
+            animateIn="show"
+            delay={2000}
+            className="absolute top-0 flex flex-col gap-5 justify-between rounded-2xl anime announceCard-2 hide p-5"
+          >
+            {/* <img src="./card/image-3.jpg" alt="" /> */}
+            <Image src="./card/image-3.jpg" alt="" width={300} height={300} />
+            <div className="text-center">
+              <div className="text-2xl">Successful Fundraise</div>
+              <div className="text-sm pt-1">A milestone for Zeko Protocol</div>
             </div>
-          </div>
-        </ScrollAnimation>
-      </div>
-      <div className="lg:hidden sm:flex w-full">
+          </ScrollAnimation>
+        </div>
+      </Link>
+      <div className="lg:hidden sm:flex w-full pt-20">
         <Carousal
           itemPadding={[0, 10, 0, 10]}
           isRTL={false}
@@ -159,47 +180,80 @@ export const AnnouncementSectionCard = () => {
           showArrows={false}
           onChange={(e) => setCardPage(e.index)}
         >
-          <div className="flex flex-col justify-between">
-            <div className="relative">
-              <div className="flex flex-col gap-5 justify-between rounded-2xl announceCard-2 p-5">
-                <img src="./cardImg-1.svg" alt="" />
-                <div>
-                  <div className="lg:text-2xl sm:text-xl">
-                    Zekoscan & Auro Wallet Intergrations
-                  </div>
-                  <div className="text-sm pt-1">
-                    Ready-made Explorer and Leading Wallet
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col justify-between">
-            <div className="relative">
-              <div className="flex flex-col gap-5 justify-between rounded-2xl announceCard-2 p-5">
-                <img src="./cardImg-2.svg" alt="" />
-                <div>
-                  <div className="text-2xl">Meet the Core Team</div>
-                  <div className="text-sm pt-1">
-                    ZekoLabs Expands for a Resounding Experience
+          <Link
+            href="https://x.com/ZekoLabs/status/1787541750917255241"
+            isExternal
+            className="text-black"
+          >
+            <div className="flex flex-col justify-between">
+              <div className="relative">
+                <div className="flex flex-col gap-5 justify-between rounded-2xl announceCard-2 p-5">
+                  <Image
+                    src="./card/image-1.jpg"
+                    alt=""
+                    width={300}
+                    height={300}
+                  />
+                  <div>
+                    <div className="lg:text-2xl sm:text-xl">
+                      Zekoscan & Auro Wallet
+                    </div>
+                    <div className="text-sm pt-1">
+                      Ready-made Explorer and Leading Wallet
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="flex flex-col justify-between">
-            <div className="relative ">
-              <div className="flex flex-col gap-5 justify-between rounded-2xl announceCard-2 p-5">
-                <img src="./cardImg-3.svg" alt="" />
-                <div>
-                  <div className="text-2xl">Compatiable with o1js</div>
-                  <div className="text-sm pt-1">
-                    Feature-rich SDK for zk community
+          </Link>
+          <Link
+            href="https://x.com/ZekoLabs/status/1785724030861127849"
+            isExternal
+            className="text-black"
+          >
+            <div className="flex flex-col justify-between">
+              <div className="relative">
+                <div className="flex flex-col gap-5 justify-between rounded-2xl announceCard-2 p-5">
+                  <Image
+                    src="./card/image-2.png"
+                    alt=""
+                    width={300}
+                    height={300}
+                  />
+                  <div>
+                    <div className="text-2xl">Meet the Core Team</div>
+                    <div className="text-sm pt-1">
+                      ZekoLabs Expands for a Resounding Experience
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
+          <Link
+            href="https://medium.com/zekoprotocol/zeko-labs-announces-3-million-in-funding-to-propel-development-of-zeko-protocol-e3d2c45bea3e"
+            isExternal
+            className="text-black"
+          >
+            <div className="flex flex-col justify-between">
+              <div className="relative ">
+                <div className="flex flex-col gap-5 justify-between rounded-2xl announceCard-2 p-5">
+                  <Image
+                    src="./card/image-3.jpg"
+                    alt=""
+                    width={300}
+                    height={300}
+                  />
+                  <div>
+                    <div className="text-2xl">Successful Fundraise</div>
+                    <div className="text-sm pt-1">
+                      A milestone for Zeko ProtocolA milestone for Zeko Protocol
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Link>
         </Carousal>
       </div>
       <div className="cd:w-[400px] sm:w-full cd:px-0 sm:px-2 flex justify-between lg:hidden sm:flex mt-5">

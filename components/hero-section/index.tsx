@@ -30,14 +30,10 @@ export const HeroSection = () => {
         <div className="w-full flex flex-col gap-10">
           <div className="lg:pl-20 sm:px-5 z-10 flex lg:flex-row sm:flex-col gap-10">
             <Link className="text-black" href="https://docs.zeko.io" isExternal>
-              <div className={`heroBtn`}>
-                <b>Start Building</b>
-              </div>
+              <div className={`heroBtn`}>Start Building</div>
             </Link>
             <Link className="text-black" href="/faucet" isExternal>
-              <div className={`heroBtn`}>
-                <b>Try Testnet</b>
-              </div>
+              <div className={`heroBtn`}>Try Testnet</div>
             </Link>
           </div>
         </div>
