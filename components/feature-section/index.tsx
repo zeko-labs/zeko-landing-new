@@ -7,24 +7,25 @@ export const FeatureSection = () => {
       <div className="w-full lg:flex sm:hidden justify-center bg-[#E0E9FD]">
         <div className="relative">
           <Image
-            src="/utils/What.bckgd.png"
+            src="/utils/Bluebckgd.BlueringsV1.jpg"
             alt="back"
-            width={1100}
+            width={1500}
             height={1100}
+            className="w-full"
           />
-          <div className="absolute top-[150px] left-[500px]">
+          <div className="absolute top-[15%] left-[45%]">
             <ServiceBtnTemplate type="Connection" direct={0} />
           </div>
-          <div className="absolute top-[300px] left-[280px]">
+          <div className="absolute top-[37%] left-[30%]">
             <ServiceBtnTemplate type="Legion" direct={0} />
           </div>
-          <div className="absolute top-[660px] left-[180px]">
+          <div className="absolute top-[70%] left-[35%]">
             <ServiceBtnTemplate type="Scaling" direct={0} />
           </div>
-          <div className="absolute top-[870px] left-[480px]">
+          <div className="absolute top-[70%] left-[57%]">
             <ServiceBtnTemplate type="Accessibility" direct={0} />
           </div>
-          <div className="absolute top-[470px] left-[750px]">
+          <div className="absolute top-[40%] left-[60%]">
             <ServiceBtnTemplate type="Origin" direct={0} />
           </div>
         </div>
