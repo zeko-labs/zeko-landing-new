@@ -72,7 +72,7 @@ export const AnnouncementSectionCard = () => {
             className="flex flex-col gap-5 justify-between rounded-2xl anime announceCard-1 p-5"
           >
             {/* <img src="./card/image-1.jpg" alt="" /> */}
-            <Image src="./card/image-1.jpg" alt="" width={300} height={300} />
+            <Image src="./card/image-1.png" alt="" width={300} height={300} />
             <div className="text-center">
               <div className="text-xl">Zekoscan & Auro Wallet</div>
               <div className="text-sm pt-1">
@@ -87,7 +87,7 @@ export const AnnouncementSectionCard = () => {
             className="absolute top-0 flex flex-col gap-5 justify-between rounded-2xl anime announceCard-2 hide p-5"
           >
             {/* <img src="./card/image-1.jpg" alt="" /> */}
-            <Image src="./card/image-1.jpg" alt="" width={300} height={300} />
+            <Image src="./card/image-1.png" alt="" width={300} height={300} />
             <div className="text-center">
               <div className="text-2xl">Zekoscan & Auro Wallet</div>
               <div className="text-sm pt-1">
@@ -151,7 +151,7 @@ export const AnnouncementSectionCard = () => {
             className="flex flex-col gap-5 justify-between rounded-2xl anime announceCard-1 p-5"
           >
             {/* <img src="./card/image-3.jpg" alt="" /> */}
-            <Image src="./card/image-3.jpg" alt="" width={300} height={300} />
+            <Image src="./card/image-3.png" alt="" width={300} height={300} />
             <div className="text-center">
               <div className="text-2xl">Successful Fundraise</div>
               <div className="text-sm pt-1">A milestone for Zeko Protocol</div>
@@ -164,7 +164,7 @@ export const AnnouncementSectionCard = () => {
             className="absolute top-0 flex flex-col gap-5 justify-between rounded-2xl anime announceCard-2 hide p-5"
           >
             {/* <img src="./card/image-3.jpg" alt="" /> */}
-            <Image src="./card/image-3.jpg" alt="" width={300} height={300} />
+            <Image src="./card/image-3.png" alt="" width={300} height={300} />
             <div className="text-center">
               <div className="text-2xl">Successful Fundraise</div>
               <div className="text-sm pt-1">A milestone for Zeko Protocol</div>
@@ -189,7 +189,7 @@ export const AnnouncementSectionCard = () => {
               <div className="relative">
                 <div className="flex flex-col gap-5 justify-between rounded-2xl announceCard-2 p-5">
                   <Image
-                    src="./card/image-1.jpg"
+                    src="./card/image-1.png"
                     alt=""
                     width={300}
                     height={300}
@@ -239,7 +239,7 @@ export const AnnouncementSectionCard = () => {
               <div className="relative ">
                 <div className="flex flex-col gap-5 justify-between rounded-2xl announceCard-2 p-5">
                   <Image
-                    src="./card/image-3.jpg"
+                    src="./card/image-3.png"
                     alt=""
                     width={300}
                     height={300}
