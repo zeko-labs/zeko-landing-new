@@ -19,7 +19,7 @@ export const HeroSectionCard = () => {
     }
   }, [showCard]);
   return (
-    <div className="w-full flex lg:flex-row sm:flex-col items-center lg:gap-10 sm:gap-10 justify-evenly lg:p-16 sm:p-12">
+    <div className="w-full flex lg:flex-row sm:flex-col items-center lg:gap-10 sm:gap-10 justify-evenly lg:p-16 sm:p-12 text-default-600">
       {/* <div className="container flex lg:flex-row gap-10 sm:flex-col items-center justify-evenly"> */}
       <div className="relative">
         <div className="relative">
@@ -57,7 +57,7 @@ export const HeroSectionCard = () => {
           className="anime absolute card card-show hide"
         >
           <div className="h-full w-full flex justify-center items-center">
-            <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm z-10">
+            <div className="lg:px-5 sm:px-1 lg:text-lg sm:text-sm z-10">
               <b>Zero-knowledge</b> is the technology of Trust, the foundation
               for building our <b>future on blockchain</b>
             </div>
@@ -103,7 +103,7 @@ export const HeroSectionCard = () => {
           delay={1000}
         >
           <div className="h-full w-full flex justify-center items-center">
-            <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm z-10">
+            <div className="lg:px-5 sm:px-1 lg:text-lg sm:text-sm z-10">
               Zeko is a <b>powerful protocol</b> for developers scaling their
               apps to <b>new markets</b>
             </div>
@@ -149,7 +149,7 @@ export const HeroSectionCard = () => {
           delay={2000}
         >
           <div className="h-full w-full flex justify-center items-center">
-            <div className="lg:px-5 sm:px-1 lg:text-base sm:text-sm z-10">
+            <div className="lg:px-5 sm:px-1 lg:text-lg sm:text-sm z-10">
               Zeko <b>amplifies</b> the positive potential of all zkApps; in
               Zeko we <b>Trust</b>, we <b>Build</b>, we <b>Scale</b>
             </div>

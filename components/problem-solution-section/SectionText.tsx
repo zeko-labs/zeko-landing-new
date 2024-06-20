@@ -30,7 +30,7 @@ export const ProblemSolutionSectionText = () => {
           className="pro-sol-invisible w-[400px] text-white lg:pl-0 sm:pl-20 lg:pt-0 sm:pt-20 text-center"
           offset={-300}
         >
-          <p className="lg:text-3xl sm:text-lg">
+          <p className="lg:text-2xl sm:text-lg">
             We live in a world of rapidly expanding technology and eroding trust
           </p>
         </ScrollAnimation>
@@ -43,7 +43,7 @@ export const ProblemSolutionSectionText = () => {
           offset={-300}
           delay={500}
         >
-          <p className="lg:text-3xl sm:text-lg">
+          <p className="lg:text-2xl sm:text-lg">
             Zeko&apos;s scalable zk rollup architecture embeds trust into every
             digital interaction
           </p>

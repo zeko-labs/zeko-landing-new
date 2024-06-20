@@ -16,13 +16,13 @@ export const FeatureSection = () => {
           <div className="absolute top-[15%] left-[45%]">
             <ServiceBtnTemplate type="Connection" direct={0} />
           </div>
-          <div className="absolute top-[35%] left-[32%]">
+          <div className="absolute top-[35%] left-[30%]">
             <ServiceBtnTemplate type="Legion" direct={0} />
           </div>
-          <div className="absolute top-[65%] left-[31%]">
+          <div className="absolute top-[66%] left-[32%]">
             <ServiceBtnTemplate type="Scaling" direct={0} />
           </div>
-          <div className="absolute top-[70%] left-[58%]">
+          <div className="absolute top-[65%] left-[60%]">
             <ServiceBtnTemplate type="Accessibility" direct={0} />
           </div>
           <div className="absolute top-[40%] left-[61%]">
