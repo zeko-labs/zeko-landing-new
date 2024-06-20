@@ -7,13 +7,13 @@ const textList = [
     title2: "zkRollup",
     text: "Zeko is a completely different type of rollup protocol designed for developers to easily access a rich set of zero-knowledge features for proof generation, verification, recursion, and more by ",
     goldText: "simply using typescript ",
-    link: "https://www.youtube.com/watch?v=rRwG8WkZYBE",
+    link: "https://docs.minaprotocol.com/zkapps/o1js",
   },
   {
     title: "Cross-Chain Revolution",
     text: "Zeko is years in the making, it reaches beyond the standard EVM L2, enabling any Mina developer to recursively prove and bridge unlimited off-chain computation across all blockchains whilst maintaining ",
     goldText: "privacy over user data ",
-    link: "https://docs.minaprotocol.com/zkapps/o1js",
+    link: "https://www.youtube.com/watch?v=rRwG8WkZYBE",
   },
   {
     title: "Expanding Blockchain Design",
