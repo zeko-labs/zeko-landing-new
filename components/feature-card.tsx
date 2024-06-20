@@ -24,7 +24,7 @@ const goldenTextData = [
 export const FeatureCard = (props: any) => {
   return (
     <div
-      className={`svgCard lg:absolute lg:left-[110px] sm:relative sm:left-0 ${
+      className={`svgCard lg:absolute lg:left-[110px] lg:top-1 sm:relative sm:left-0 ${
         props.type === 4 ? "lg:top-0" : ""
       }`}
     >
