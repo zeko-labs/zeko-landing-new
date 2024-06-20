@@ -11,7 +11,7 @@ const textList = [
   },
   {
     title: "Cross-Chain Revolution",
-    text: "Zeko is years in the making, it reaches beyond the standard EVM L2, enabling any Mina developer to recursively prove and bridge unlimited off-chain computation across all blockchains whilst maintaining ",
+    text: "Zeko is years in the making beyond the standard EVM L2: any Mina developer can recursively prove and bridge unlimited off-chain computation across all blockchains whilst preserving ",
     goldText: "privacy over user data ",
     link: "https://www.youtube.com/watch?v=rRwG8WkZYBE",
   },
