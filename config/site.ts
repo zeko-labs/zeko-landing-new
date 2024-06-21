@@ -65,6 +65,6 @@ export const siteConfig = {
     telegram: "https://t.me/+m8LBsR2kNTAxNmFh",
     litepaper: "https://docsend.com/view/f9a6kgdr4tjwuqng",
     discord: "https://discord.gg/vSDxqAchUY",
-    docs: "https://https://github.com/zeko-labs",
+    docs: "https://github.com/zeko-labs",
   },
 };
