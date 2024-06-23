@@ -27,7 +27,7 @@ export const ProblemSolutionSectionText = () => {
         <ScrollAnimation
           animateOnce={true}
           animateIn="pro-sol-text"
-          className="pro-sol-invisible w-[400px] text-white lg:pl-0 sm:pl-20 lg:pt-0 sm:pt-20 text-center"
+          className="pro-sol-invisible w-[250px] text-white lg:pl-0 sm:pl-20 lg:pt-0 sm:pt-20 text-center"
           offset={-300}
         >
           <p className="lg:text-2xl sm:text-lg">
@@ -39,7 +39,7 @@ export const ProblemSolutionSectionText = () => {
         <ScrollAnimation
           animateOnce={true}
           animateIn="pro-sol-text"
-          className="pro-sol-invisible w-[400px] text-white lg:pr-0 sm:pr-20 lg:pb-0 sm:pb-20 text-center"
+          className="pro-sol-invisible w-[330px] text-white lg:pr-0 sm:pr-20 lg:pb-0 sm:pb-20 text-center"
           offset={-300}
           delay={500}
         >
