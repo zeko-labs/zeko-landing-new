@@ -23,13 +23,13 @@ const MuteSwitch: FC<MuteSwitchProps> = ({ className, classNames }) => {
     isPlaying ? audio.play() : audio.pause();
   }, [isPlaying]);
 
-  useEffect(() => {
-    audio.addEventListener("ended", () => setIsPlaying(false));
-    return () => {
-      audio.removeEventListener("ended", () => setIsPlaying(false));
-      audio.pause();
-    };
-  }, []);
+  // useEffect(() => {
+  //   audio.addEventListener("ended", () => setIsPlaying(false));
+  //   return () => {
+  //     audio.removeEventListener("ended", () => setIsPlaying(false));
+  //     audio.pause();
+  //   };
+  // }, []);
 
   const {
     Component,

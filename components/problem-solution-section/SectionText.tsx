@@ -27,11 +27,13 @@ export const ProblemSolutionSectionText = () => {
         <ScrollAnimation
           animateOnce={true}
           animateIn="pro-sol-text"
-          className="pro-sol-invisible w-[250px] text-white lg:pl-0 sm:pl-20 lg:pt-0 sm:pt-20 text-center"
+          className="pro-sol-invisible w-[350px] text-white lg:pl-0 sm:pl-20 lg:pt-0 sm:pt-20 text-center"
           offset={-300}
         >
           <p className="lg:text-2xl sm:text-lg">
-            We live in a world of rapidly expanding technology and eroding trust
+            We live in a world of rapidly
+            <br /> expanding technology
+            <br /> and eroding trust
           </p>
         </ScrollAnimation>
       </div>
