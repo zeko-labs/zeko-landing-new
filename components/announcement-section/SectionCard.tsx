@@ -247,7 +247,7 @@ export const AnnouncementSectionCard = () => {
                   <div>
                     <div className="text-2xl">Successful Fundraise</div>
                     <div className="text-sm pt-1">
-                      A milestone for Zeko ProtocolA milestone for Zeko Protocol
+                      A milestone for Zeko Protocol
                     </div>
                   </div>
                 </div>

@@ -41,6 +41,8 @@
   padding: 10px;
   transition: 0.5s;
   z-index: 10;
+  width: 150px;
+  text-align: center;
 }
 
 .heroBtn:hover {

@@ -1,23 +1,23 @@
 const goldenTextData = [
   {
     title: "Accessibility",
-    body: "Developers can write and deploy applications today to a Zeko L2 that is isomorphic to the MinaL1, or spin up to your own custom zkAppChains.",
+    body: "Developers can write and deploy applications in any programming language to an isomorphic Zeko L2, or spin up to their own custom zkAppChains.",
   },
   {
     title: "Connection",
-    body: "From proof generation, recursion, smart contract creation to decentralized storage solutions, Zeko offers everything developers need to realize the potential to bring your zkApp ideas to life.",
+    body: "Proof generation, recursion, smart contracts, DA solutions & more; Zeko offers everything developers need to bring their zkApp ideas to life.",
   },
   {
     title: "Scaling",
-    body: "Through trustless zk-bridges, proofs that verify on Zeko can be consumed by the EVM, dramatically upending existing paradigms for blockchain applications.",
+    body: "Through trustless zk-bridging, proofs that verify on Zeko can be consumed by the EVM, dramatically upending existing paradigms for blockchain applications.",
   },
   {
     title: "Origin",
-    body: "Zeko chains will enjoy easy composability between each other and Mina itself using recursive proofs.",
+    body: "Zeko chains enjoy easy composability between each other and Mina itself using recursive proofs and shared infrastructure.",
   },
   {
     title: "Legion",
-    body: "Zeko enables a community of developers who innovate their decentralized applications, optimize performance, and enhance the user experience. We inspire the next generation of zk applications that will shape the future and transform our lives.",
+    body: "Zeko is a community of builders obsessed with pioneering applications, optimizing performance, and enhancing the user experience. We shape the future and inspire the new internet.",
   },
 ];
 
