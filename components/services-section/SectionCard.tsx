@@ -3,8 +3,7 @@ import { BtnCircle } from "../BtnCircle";
 
 const textList = [
   {
-    title1: "Advanced",
-    title2: "zkRollup",
+    title1: "Advanced zkRollup",
     text: "Zeko is a completely different type of rollup protocol designed for developers to easily access a rich set of zero-knowledge features for proof generation, verification, recursion, and more by ",
     goldText: "simply using typescript ",
     link: "https://docs.minaprotocol.com/zkapps/o1js",
@@ -29,16 +28,7 @@ export const ServicesSectionCard = (props: any) => {
     <Link href={textList[type].link} className="text-white" isExternal>
       <div className="lg:w-80 sm:w-full lg:h-80 gap-5 sm:h-auto flex flex-col justify-between imgCont cursor-pointer">
         <h1 className="lg:text-4xl sm:text-2xl">
-          <b>
-            {type === 0 ? (
-              <>
-                <div>{textList[type].title1}</div>
-                <div>{textList[type].title2}</div>
-              </>
-            ) : (
-              textList[type].title
-            )}
-          </b>
+          <b>{textList[type].title}</b>
         </h1>
         <div className="pictureTextCont lg:w-[350px] sm:w-full">
           <div className="whitespace-normal serviceCont">
