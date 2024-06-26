@@ -18,7 +18,8 @@ export const HeroSectionText = () => {
           </strong>{" "}
           built on Mina and designed for developers shaping the{" "}
           <br className="lg:hidden sm:block" />
-          future of finance, AI, gaming, and the internet
+          future of finance, AI, gaming,
+          <br className="lg:hidden sm:block" /> and the internet
         </h2>
       </div>
     </div>

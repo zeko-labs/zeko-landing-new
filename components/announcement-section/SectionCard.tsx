@@ -102,7 +102,6 @@ export const AnnouncementSectionCard = () => {
           </ScrollAnimation>
         </div>
       </Link>
-
       <Link
         href="https://x.com/ZekoLabs/status/1785724030861127849"
         isExternal
@@ -159,7 +158,7 @@ export const AnnouncementSectionCard = () => {
             <Image src="./card/image-3.png" alt="" width={300} height={300} />
             <div className="text-center">
               <div className="text-2xl">Successful Fundraise</div>
-              <div className="text-sm pt-1">A milestone for Zeko Protocol</div>
+              <div className="text-sm pt-1">A Milestone for Zeko Protocol</div>
             </div>
           </ScrollAnimation>
           <ScrollAnimation
@@ -172,7 +171,7 @@ export const AnnouncementSectionCard = () => {
             <Image src="./card/image-3.png" alt="" width={300} height={300} />
             <div className="text-center">
               <div className="text-2xl">Successful Fundraise</div>
-              <div className="text-sm pt-1">A milestone for Zeko Protocol</div>
+              <div className="text-sm pt-1">A Milestone for Zeko Protocol</div>
             </div>
           </ScrollAnimation>
         </div>
@@ -252,7 +251,7 @@ export const AnnouncementSectionCard = () => {
                   <div>
                     <div className="text-2xl">Successful Fundraise</div>
                     <div className="text-sm pt-1">
-                      A milestone for Zeko Protocol
+                      A Milestone for Zeko Protocol
                     </div>
                   </div>
                 </div>

@@ -26,20 +26,24 @@ export const HeroSection = () => {
           className="lg:pl-20 sm:pl-0 z-10 lg:w-60 sm:w-36"
         />
         <HeroSectionText />
-        <div className="w-full flex flex-col gap-10">
-          <div className="lg:pl-20 sm:px-5 z-10 flex lg:flex-row sm:flex-col gap-10">
+        <div className="w-full flex flex-col gap-10 lg:items-start sm:items-center ">
+          <div className="lg:pl-20 sm:px-5 z-10 flex lg:gap-10 sm:gap-3">
             <div>
               <Link
                 className="text-black"
                 href="https://docs.zeko.io"
                 isExternal
               >
-                <div className={`heroBtn`}>Start Building</div>
+                <div className="heroBtn lg:w-[150px] sm:w-[120px]">
+                  Start Building
+                </div>
               </Link>
             </div>
             <div>
               <Link className="text-black" href="/faucet" isExternal>
-                <div className={`heroBtn`}>Try Testnet</div>
+                <div className="heroBtn lg:w-[150px] sm:w-[120px]">
+                  Try Testnet
+                </div>
               </Link>
             </div>
           </div>
