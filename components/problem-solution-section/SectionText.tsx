@@ -23,7 +23,7 @@ export const ProblemSolutionSectionText = () => {
   }, [showCard]);
   return (
     <div className="relative w-full h-full">
-      <div className="absolute left-[30%] lg:-ml-[300px] sm:-ml-[50vw] lg:w-[600px] sm:w-[100vw] top-[30%] lg:-mt-[300px] sm:-mt-[100vw] lg:h-[600px] sm:h-[100vw] pro-sol-back flex justify-center items-center">
+      <div className="absolute left-[30%] lg:-ml-[300px] sm:-ml-[60vw] lg:w-[600px] sm:w-[120vw] top-[30%] lg:-mt-[300px] sm:-mt-[80vw] lg:h-[600px] sm:h-[120vw] pro-sol-back flex justify-center items-center">
         <ScrollAnimation
           animateOnce={true}
           animateIn="pro-sol-text"
@@ -37,7 +37,7 @@ export const ProblemSolutionSectionText = () => {
           </p>
         </ScrollAnimation>
       </div>
-      <div className="absolute right-[30%] lg:-mr-[500px] sm:-mr-[80vw] lg:w-[1000px] sm:w-[160vw] bottom-[30%] lg:-mb-[500px] sm:-mb-[120vw] lg:h-[1000px] sm:h-[160vw] pro-sol-back flex justify-center items-center object-cover">
+      <div className="absolute right-[30%] lg:-mr-[500px] sm:-mr-[80vw] lg:w-[1000px] sm:w-[160vw] bottom-[30%] lg:-mb-[500px] sm:-mb-[90vw] lg:h-[1000px] sm:h-[160vw] pro-sol-back flex justify-center items-center object-cover">
         <ScrollAnimation
           animateOnce={true}
           animateIn="pro-sol-text"
