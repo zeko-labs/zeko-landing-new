@@ -78,7 +78,7 @@ export const AnnouncementSectionCard = () => {
             className="flex flex-col gap-5 justify-between rounded-2xl anime announceCard-1 p-5"
           >
             <Image src="./card/image-1.png" alt="" width={300} height={300} />
-            <div className="text-center">
+            <div className="text-center text-default-600">
               <div className="text-xl">Zekoscan & Auro Wallet</div>
               <div className="text-sm pt-1">
                 Ready-made Explorer and Leading Wallet
@@ -93,7 +93,7 @@ export const AnnouncementSectionCard = () => {
           >
             {/* <img src="./card/image-1.jpg" alt="" /> */}
             <Image src="./card/image-1.png" alt="" width={300} height={300} />
-            <div className="text-center">
+            <div className="text-center text-default-600">
               <div className="text-2xl">Zekoscan & Auro Wallet</div>
               <div className="text-sm pt-1">
                 Ready-made Explorer and Leading Wallet
@@ -117,7 +117,7 @@ export const AnnouncementSectionCard = () => {
           >
             {/* <img src="./card/image-2.png" alt="" /> */}
             <Image src="./card/image-2.png" alt="" width={300} height={300} />
-            <div className="text-center">
+            <div className="text-center text-default-600">
               <div className="text-2xl">Meet the Core Team</div>
               <div className="text-sm pt-1">
                 ZekoLabs Expands for a Resounding Experience
@@ -132,7 +132,7 @@ export const AnnouncementSectionCard = () => {
           >
             {/* <img src="./card/image-2.png" alt="" /> */}
             <Image src="./card/image-2.png" alt="" width={300} height={300} />
-            <div className="text-center">
+            <div className="text-center text-default-600">
               <div className="text-2xl">Meet the Core Team</div>
               <div className="text-sm pt-1">
                 ZekoLabs Expands for a Resounding Experience
@@ -156,7 +156,7 @@ export const AnnouncementSectionCard = () => {
           >
             {/* <img src="./card/image-3.jpg" alt="" /> */}
             <Image src="./card/image-3.png" alt="" width={300} height={300} />
-            <div className="text-center">
+            <div className="text-center text-default-600">
               <div className="text-2xl">Successful Fundraise</div>
               <div className="text-sm pt-1">A Milestone for Zeko Protocol</div>
             </div>
@@ -169,7 +169,7 @@ export const AnnouncementSectionCard = () => {
           >
             {/* <img src="./card/image-3.jpg" alt="" /> */}
             <Image src="./card/image-3.png" alt="" width={300} height={300} />
-            <div className="text-center">
+            <div className="text-center text-default-600">
               <div className="text-2xl">Successful Fundraise</div>
               <div className="text-sm pt-1">A Milestone for Zeko Protocol</div>
             </div>
@@ -198,7 +198,7 @@ export const AnnouncementSectionCard = () => {
                     width={300}
                     height={300}
                   />
-                  <div>
+                  <div className=" text-default-600">
                     <div className="lg:text-2xl sm:text-xl">
                       Zekoscan & Auro Wallet
                     </div>
@@ -224,7 +224,7 @@ export const AnnouncementSectionCard = () => {
                     width={300}
                     height={300}
                   />
-                  <div>
+                  <div className=" text-default-600">
                     <div className="text-2xl">Meet the Core Team</div>
                     <div className="text-sm pt-1">
                       ZekoLabs Expands for a Resounding Experience
@@ -248,7 +248,7 @@ export const AnnouncementSectionCard = () => {
                     width={300}
                     height={300}
                   />
-                  <div>
+                  <div className=" text-default-600">
                     <div className="text-2xl">Successful Fundraise</div>
                     <div className="text-sm pt-1">
                       A Milestone for Zeko Protocol
