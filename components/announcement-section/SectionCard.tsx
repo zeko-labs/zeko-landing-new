@@ -77,7 +77,6 @@ export const AnnouncementSectionCard = () => {
             delay={0}
             className="flex flex-col gap-5 justify-between rounded-2xl anime announceCard-1 p-5"
           >
-            {/* <img src="./card/image-1.jpg" alt="" /> */}
             <Image src="./card/image-1.png" alt="" width={300} height={300} />
             <div className="text-center">
               <div className="text-xl">Zekoscan & Auro Wallet</div>
