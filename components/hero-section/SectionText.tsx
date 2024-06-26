@@ -16,8 +16,9 @@ export const HeroSectionText = () => {
           <strong className={fontLexendBold.className}>
             zero-knowledge, cross-chain scaling protocol
           </strong>{" "}
-          built on Mina and designed for developers shaping the future of
-          finance, AI, gaming, and the internet
+          built on Mina and designed for developers shaping the{" "}
+          <br className="lg:hidden sm:block" />
+          future of finance, AI, gaming, and the internet
         </h2>
       </div>
     </div>

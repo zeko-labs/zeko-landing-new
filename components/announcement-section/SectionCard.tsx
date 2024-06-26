@@ -57,6 +57,12 @@ export const AnnouncementSectionCard = () => {
             </Link>
           </div>
         </div>
+        <div className="justify-evenly text-sm border-t-1 border-black absolute bottom-5 lg:hidden sm:flex w-full">
+          <div className="flex justify-evenly w-full items-center pt-5">
+            <div>© 2024 ZekoLabs.</div>
+            <div>All Rights Reserved.</div>
+          </div>
+        </div>
       </div>
       <Link
         href="https://x.com/ZekoLabs/status/1787541750917255241"

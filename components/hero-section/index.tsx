@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { HeroSectionText } from "./SectionText";
 import { Footer } from "../footer";
-import { fontLexend, fontLexendBold, fontLexendLight } from "@/config/fonts";
 import { Link } from "@nextui-org/link";
 
 export const HeroSection = () => {
@@ -18,13 +17,13 @@ export const HeroSection = () => {
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="w-full lg:h-[90%] sm:h-full flex flex-col justify-between z-10 gap-16 sm:items-center lg:items-start">
+      <div className="w-full lg:h-[90%] sm:h-full flex flex-col justify-between z-10 lg:gap-16 sm:gap-8 sm:items-center lg:items-start pt-10 mb-5">
         <Image
           src={"./logo.svg"}
           alt=""
           width={180}
           height={100}
-          className="lg:pl-20 sm:pl-0 z-10 lg:w-60 sm:w-28"
+          className="lg:pl-20 sm:pl-0 z-10 lg:w-60 sm:w-36"
         />
         <HeroSectionText />
         <div className="w-full flex flex-col gap-10">

@@ -30,16 +30,14 @@ export const FeatureSection = () => {
           </div>
         </div>
       </div>
-      <div className="relative lg:hidden sm:flex flex-col gap-10 lg:p-16 sm:p-8 bg-[#E0E9FD] w-full">
-        <div className="w-full h-full absolute top-[300px] z-0 left-0 object-cover">
-          <Image
-            src="/utils/back-form.png"
-            alt="Background"
-            width={500}
-            height={500}
-            className="object-cover"
-          />
-        </div>
+      <div className="relative lg:hidden sm:flex flex-col gap-10 lg:p-16 sm:p-8 bg-[#E0E9FD] w-full overflow-hidden">
+        <Image
+          src="/utils/LinearBlueBckgd.GoldCircleswEcho.png"
+          alt="back"
+          width={1500}
+          height={1100}
+          className="h-full absolute top-0 left-0 object-cover"
+        />
         <ServiceBtnTemplate type="Connection" />
         <ServiceBtnTemplate type="Legion" direct={1} />
         <ServiceBtnTemplate type="Scaling" />
