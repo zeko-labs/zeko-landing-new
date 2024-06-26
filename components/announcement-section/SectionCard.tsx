@@ -39,7 +39,7 @@ export const AnnouncementSectionCard = () => {
           <source src="/background.webm" />
           Your browser does not support the video tag.
         </video>
-        <div className="w-full text-center top-8 absolute text-4xl pb-5 border-b-1 border-slate-300">
+        <div className="w-full text-center top-8 absolute text-4xl pb-5 border-b-1 text-default-600">
           <b>What&apos;s New</b>
         </div>
         <div className="justify-evenly text-sm border-t-1 border-black absolute bottom-0 lg:flex sm:hidden w-full">
