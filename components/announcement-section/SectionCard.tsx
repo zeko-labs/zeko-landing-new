@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import { Button } from "@nextui-org/button";
-import { card } from "@/components/primitives";
 import { Image } from "@nextui-org/react";
 
 import Carousal from "@itseasy21/react-elastic-carousel";
@@ -27,7 +26,6 @@ export const AnnouncementSectionCard = () => {
   };
 
   return (
-    // <div className="flex flex-col mb-40">
     <div className="flex sm:flex-col lg:flex-row justify-between lg:gap-10 w-full top-0 lg:p-28 lg:pt-32 sm:p-5 cardImgBack items-center">
       <div className="w-full h-[800px] absolute top-0 z-0 left-0 overflow-hidden">
         <video
@@ -91,7 +89,6 @@ export const AnnouncementSectionCard = () => {
             delay={0}
             className="absolute top-0 flex flex-col gap-5 justify-between rounded-2xl anime announceCard-2 hide p-5"
           >
-            {/* <img src="./card/image-1.jpg" alt="" /> */}
             <Image src="./card/image-1.png" alt="" width={300} height={300} />
             <div className="text-center text-default-600">
               <div className="text-2xl">Zekoscan & Auro Wallet</div>
@@ -115,7 +112,6 @@ export const AnnouncementSectionCard = () => {
             delay={1000}
             className="flex flex-col gap-5 justify-between rounded-2xl anime announceCard-1 p-5"
           >
-            {/* <img src="./card/image-2.png" alt="" /> */}
             <Image src="./card/image-2.png" alt="" width={300} height={300} />
             <div className="text-center text-default-600">
               <div className="text-2xl">Meet the Core Team</div>
@@ -130,7 +126,6 @@ export const AnnouncementSectionCard = () => {
             delay={1000}
             className="absolute top-0 flex flex-col gap-5 justify-between rounded-2xl anime announceCard-2 hide p-5"
           >
-            {/* <img src="./card/image-2.png" alt="" /> */}
             <Image src="./card/image-2.png" alt="" width={300} height={300} />
             <div className="text-center text-default-600">
               <div className="text-2xl">Meet the Core Team</div>
@@ -154,7 +149,6 @@ export const AnnouncementSectionCard = () => {
             delay={2000}
             className="flex flex-col gap-5 justify-between rounded-2xl anime announceCard-1 p-5"
           >
-            {/* <img src="./card/image-3.jpg" alt="" /> */}
             <Image src="./card/image-3.png" alt="" width={300} height={300} />
             <div className="text-center text-default-600">
               <div className="text-2xl">Successful Fundraise</div>
@@ -167,7 +161,6 @@ export const AnnouncementSectionCard = () => {
             delay={2000}
             className="absolute top-0 flex flex-col gap-5 justify-between rounded-2xl anime announceCard-2 hide p-5"
           >
-            {/* <img src="./card/image-3.jpg" alt="" /> */}
             <Image src="./card/image-3.png" alt="" width={300} height={300} />
             <div className="text-center text-default-600">
               <div className="text-2xl">Successful Fundraise</div>

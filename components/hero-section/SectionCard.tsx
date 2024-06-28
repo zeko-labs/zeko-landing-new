@@ -20,7 +20,6 @@ export const HeroSectionCard = () => {
   }, [showCard]);
   return (
     <div className="w-full flex lg:flex-row sm:flex-col items-center lg:gap-10 sm:gap-10 justify-evenly lg:p-16 sm:p-12 text-default-600">
-      {/* <div className="container flex lg:flex-row gap-10 sm:flex-col items-center justify-evenly"> */}
       <div className="relative">
         <div className="relative">
           <ScrollAnimation
