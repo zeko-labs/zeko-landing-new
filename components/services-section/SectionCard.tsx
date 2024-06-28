@@ -3,7 +3,7 @@ import { BtnCircle } from "../BtnCircle";
 
 const textList = [
   {
-    title: "Advanced zkRollup",
+    title: "Advanced zkRollup Technology",
     text: "Zeko is a completely different type of rollup protocol designed for developers to easily access a rich set of zero-knowledge features for proof generation, verification, recursion, and more by ",
     goldText: "simply using typescript ",
     link: "https://docs.minaprotocol.com/zkapps/o1js",
