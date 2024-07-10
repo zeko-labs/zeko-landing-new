@@ -6,7 +6,7 @@ import { Link } from "@nextui-org/link";
 export const HeroSection = () => {
   return (
     <div className="relative w-full lg:h-screen sm:h-full">
-      <div className="w-full h-[110%] absolute top-0 z-0">
+      <div className="w-full h-[115%] absolute top-0 z-0">
         <video
           autoPlay
           loop
