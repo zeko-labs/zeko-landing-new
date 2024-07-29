@@ -1,3 +1,5 @@
+import ScrollAnimation from "react-animate-on-scroll";
+
 const goldenTextData = [
   {
     title: "Accessibility",
@@ -23,15 +25,23 @@ const goldenTextData = [
 
 export const FeatureCard = (props: any) => {
   return (
-    <div
-      className={`svgCard lg:absolute lg:left-[100px] lg:top-1 sm:relative sm:left-0 ${
-        props.type === 4 ? "lg:top-0" : ""
-      }`}
-    >
-      <div className="lg:w-[320px] sm:w-full h-auto rounded-lg p-5 bg-opacity-50 bg-slate-100 z-20 flex flex-col justify-center">
-        <div className="text-2xl">{goldenTextData[props.type].title}</div>
-        <div className="">{goldenTextData[props.type].body}</div>
+    <div>
+      <div
+        className={`svgCard lg:absolute lg:left-[100px] lg:top-1 lg:flex sm:hidden ${
+          props.type === 4 ? "lg:top-0" : ""
+        }`}
+      >
+        <div className="lg:w-[320px] sm:w-full h-auto rounded-lg p-5 bg-opacity-50 bg-slate-100 z-20 flex flex-col justify-center">
+          <div className="text-2xl">{goldenTextData[props.type].title}</div>
+          <div className="">{goldenTextData[props.type].body}</div>
+        </div>
       </div>
+      <ScrollAnimation animateOnce={true} animateIn="show" className="anime">
+        <div className="w-full h-auto rounded-lg p-5 bg-opacity-50 bg-slate-100 z-20 flex flex-col justify-center">
+          <div className="text-2xl">{goldenTextData[props.type].title}</div>
+          <div className="">{goldenTextData[props.type].body}</div>
+        </div>
+      </ScrollAnimation>
     </div>
   );
 };
