@@ -36,12 +36,14 @@ export const FeatureCard = (props: any) => {
           <div className="">{goldenTextData[props.type].body}</div>
         </div>
       </div>
-      <ScrollAnimation animateOnce={true} animateIn="show" className="anime">
-        <div className="w-full h-auto rounded-lg p-5 bg-opacity-50 bg-slate-100 z-20 flex flex-col justify-center">
-          <div className="text-2xl">{goldenTextData[props.type].title}</div>
-          <div className="">{goldenTextData[props.type].body}</div>
-        </div>
-      </ScrollAnimation>
+      <div className="lg:hidden sm:flex">
+        <ScrollAnimation animateOnce={true} animateIn="show" className="anime">
+          <div className="w-full h-auto rounded-lg p-5 bg-opacity-50 bg-slate-100 z-20 flex flex-col justify-center">
+            <div className="text-2xl">{goldenTextData[props.type].title}</div>
+            <div className="">{goldenTextData[props.type].body}</div>
+          </div>
+        </ScrollAnimation>
+      </div>
     </div>
   );
 };
