@@ -19,6 +19,16 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  openGraph: {
+    images: [
+      {
+        url: '/og-image.png',  // Path relative to the public directory
+        width: 1200,
+        height: 630,
+        alt: 'Zeko Labs'
+      }
+    ]
+}
 };
 
 export const viewport: Viewport = {
