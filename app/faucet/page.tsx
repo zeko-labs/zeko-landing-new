@@ -1,18 +1,18 @@
 "use client";
 
 import { label, subtitle, title } from "@/components/primitives";
-import { NETWORKS } from "@/config/networks";
+// import { NETWORKS } from "@/config/networks";
 import FaucetApiService from "@/services/faucetApi";
 import { Button } from "@nextui-org/button";
 import { Input } from "@nextui-org/input";
 import { Link } from "@nextui-org/link";
 import { clsx } from "clsx";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const fas = new FaucetApiService();
 
 export default function DocsPage() {
-  const [network, setNetwork] = useState(NETWORKS[0]);
+  // const [network, setNetwork] = useState(NETWORKS[0]);
   const [address, setAddress] = useState("");
   const [responseTxt, setResponseTxt] = useState("");
   const [requesting, setRequesting] = useState(false);
@@ -27,14 +27,20 @@ export default function DocsPage() {
     if (requesting) return;
     setRequesting(true);
     const responseTxt = await fas.request(address);
-    setResponseTxt(responseTxt);
+    if (responseTxt.includes("Account_balance_precondition_unsatisfied")) {
+      setResponseTxt("This account has already been fauceted.");
+      fauceted = true;
+    } else if (responseTxt.includes("error")) {
+      setResponseTxt(responseTxt);
+    } else {
+      setResponseTxt("Request successful!");
+    }
     setRequesting(false);
-    // FIXME: set fauceted = true if response is 2xx
   };
 
   const NetworkSelector = () => (
     <div className="w-full flex flex-col gap-2">
-      <span className={label()}>NETWORK</span>
+      {/* <span className={label()}>NETWORK</span>
       <div className="w-full md:w-fit flex flex-col md:flex-row rounded-lg overflow-hidden">
         {NETWORKS.map((n) => (
           <Button
@@ -46,7 +52,7 @@ export default function DocsPage() {
             {n.name}
           </Button>
         ))}
-      </div>
+      </div> */}
       <span className={label()}>
         To faucet tMINA on Mina L1 please visit{" "}
         <Link href="https://faucet.minaprotocol.com" target="_blank">
