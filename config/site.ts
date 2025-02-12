@@ -3,7 +3,7 @@ export type SiteConfig = typeof siteConfig;
 export const siteConfig = {
   name: "Zeko",
   description:
-    "Zeko is the premier zero-knowledge scaling protocol, built on Mina and designed for developers shaping the future of finance, AI, and gaming",
+    "Zeko is a zero-knowledge cross-chain scaling protocol",
   navItems: [
     {
       label: "Home",
@@ -62,7 +62,7 @@ export const siteConfig = {
   ],
   links: {
     twitter: "https://twitter.com/ZekoLabs",
-    telegram: "https://t.me/+m8LBsR2kNTAxNmFh",
+    telegram: "https://t.me/zekoprotocol",
     litepaper: "https://docsend.com/view/f9a6kgdr4tjwuqng",
     discord: "https://discord.gg/vSDxqAchUY",
     docs: "https://github.com/zeko-labs",
