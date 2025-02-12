@@ -11,6 +11,11 @@ import { Navbar } from "@/components/navbar";
 import Script from "next/script";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.DEPLOY_PRIME_URL || // Netlify deploy preview URL
+    process.env.NEXT_PUBLIC_SITE_URL || // Production URL
+    'http://localhost:3000' // Localhost URL
+  ),
   title: {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
@@ -22,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: '/og-image.png',  // Path relative to the public directory
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Zeko Labs'
