@@ -73,16 +73,6 @@ export const Navbar = () => {
                     Faucet
                   </Link>
                 </DropdownItem>
-                <DropdownItem key="transfer">
-                  <Link
-                    isExternal
-                    href="/send"
-                    className="text-black w-full"
-                    aria-label="transfer"
-                  >
-                    Send
-                  </Link>
-                </DropdownItem>
                 <DropdownItem key="docs">
                   <Link
                     isExternal
