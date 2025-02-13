@@ -46,13 +46,6 @@ export const Footer = (props: any) => {
       <Link isExternal href={siteConfig.links.docs} aria-label="Docs">
         <GithubIcon className="text-default-900" size={28} />
       </Link>
-      <Link
-        isExternal
-        href={siteConfig.links.litepaper}
-        aria-label="WhitePaper"
-      >
-        <PaperIcon className="text-default-900" size={28} />
-      </Link>
       <Link isExternal href={siteConfig.links.twitter} aria-label="Twitter">
         <TwitterIcon className="text-default-900" size={28} />
       </Link>

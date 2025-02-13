@@ -63,7 +63,6 @@ export const siteConfig = {
   links: {
     twitter: "https://twitter.com/ZekoLabs",
     telegram: "https://t.me/zekoprotocol",
-    litepaper: "https://docsend.com/view/f9a6kgdr4tjwuqng",
     discord: "https://discord.gg/vSDxqAchUY",
     docs: "https://github.com/zeko-labs",
   },
